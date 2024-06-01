@@ -73,12 +73,12 @@ Instruction acts as abstract interface between C-language and the hardware.
 
 To design ASIC chips, few tools or things required. Those are
 
-*RTL Design:*  register-transfer level (RTL) is a design abstraction which models a synchronous digital circuit. for this designs many open sorces are available. like, librecores.org, opencores.org, github.com, etc...
+**RTL Design:**  register-transfer level (RTL) is a design abstraction which models a synchronous digital circuit. for this designs many open sorces are available. like, librecores.org, opencores.org, github.com, etc...
 
-*EDA tools:* The term Electronic Design Automation (EDA) refers to the tools that are used to design and verify integrated circuits (ICs). open sorces tools are available like Qflow, OpenROAD, OpenLANE, etc.
+**EDA tools:** The term Electronic Design Automation (EDA) refers to the tools that are used to design and verify integrated circuits (ICs). open sorces tools are available like Qflow, OpenROAD, OpenLANE, etc.
  
 
-*PDK data:* PDK is process design kit. It is interface between FAB and design.  
+**PDK data:** PDK is process design kit. It is interface between FAB and design.  
 
  process design rules: DRC, LVS, REX Digital standerd cell libreries i/o librerirs etc..... which are used to model a fabrication process for the EDA tools used to design an ICs.
 
