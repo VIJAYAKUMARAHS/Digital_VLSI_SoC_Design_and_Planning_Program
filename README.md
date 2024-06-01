@@ -21,9 +21,11 @@ Package: QFN 48 quad flat No leads
 
 ![01 06 2024_19 45 35_REC](https://github.com/VIJAYAKUMARAHS/VSD-SoC_Design_and_Planning_Program/assets/89599199/e2361841-3394-4612-9fa7-51629326378b)
 
-*CORE*: Where we place the IPs, Macro and standard cell.
-*DIE*: the size of an entire chip area
-*PADS*: this is where we are giving signal in and take out and also we place protection circuit here. when comes to full chip level design we say pads, when comes to block level design we say ports.
+CORE: Where we place the IPs, Macro and standard cell.
+
+DIE: the size of an entire chip area
+
+PADS: this is where we are giving signal in and take out and also we place protection circuit here. when comes to full chip level design we say pads, when comes to block level design we say ports.
 
 #### Sample SOC look like
 
