@@ -133,6 +133,53 @@ Physical verification: DRCs, LVS, ERC.
 Timing Verification: Here Static Timing Analysis will done.
 
 
+### Introduction to OpenLANE and Strive chipsets
+
+OPENLANE is an automated RTL to GDSII flow tool and its composed of several tools such as OpenROAD, Yosys, Magic, Netgen, Fault, CVC SPEF-Extractor, CU-GR, Klayout and a number of scripts used for design exploration and optimization. 
+
+![01 06 2024_23 28 01_REC](https://github.com/VIJAYAKUMARAHS/Digital_VLSI_SoC_Design_and_Planning_Program/assets/89599199/c55b5961-2a00-4fed-a70d-f6d19eaeea8a)
+
+striVe SoC Family
+
+![01 06 2024_23 30 33_REC](https://github.com/VIJAYAKUMARAHS/Digital_VLSI_SoC_Design_and_Planning_Program/assets/89599199/dac9efbf-c9ee-4215-90b0-314bdffaeeaf)
+
+The main goal of OPENLANE is to produce a clean GDSII with no human intervation.
+
+No LVS violations
+
+No DRC Violations
+
+No timing Violations
+
+It has 43 design examples with their best configurations.
+
+## Introduction to OpenLANE detailed ASIC design flow
+
+The flow start with RTL and ends with GDSII. OpenLANE is a completely automated RTL to GDSII flow which embeds in it different opensource tools, namely, OpenROAD, Yosys, ABC, Magic etc.,
+
+![01 06 2024_23 36 17_REC](https://github.com/VIJAYAKUMARAHS/Digital_VLSI_SoC_Design_and_Planning_Program/assets/89599199/6566ae2b-33e3-405c-82b6-030a2b0aeb13)
+
+![01 06 2024_23 42 31_REC](https://github.com/VIJAYAKUMARAHS/Digital_VLSI_SoC_Design_and_Planning_Program/assets/89599199/9564692c-4a2a-4c1c-9c5e-f0a04085271e)
+
+**Dealing with Antenna violations**
+
+when a metal wire segment is fabricated, it collect charges which can demaged the transister gates during the fabrication.
+
+![01 06 2024_23 45 57_REC](https://github.com/VIJAYAKUMARAHS/Digital_VLSI_SoC_Design_and_Planning_Program/assets/89599199/eb450a2a-e841-4b81-9e1f-6f03642b2452)
+
+**Solutions**
+
+![01 06 2024_23 54 16_REC](https://github.com/VIJAYAKUMARAHS/Digital_VLSI_SoC_Design_and_Planning_Program/assets/89599199/bdb50f45-71b6-459b-9bb4-2b2f184cfccf)
+
+
+
+
+
+
+
+
+
+
 
 
 
