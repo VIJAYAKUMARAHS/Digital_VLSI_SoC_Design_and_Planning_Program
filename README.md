@@ -47,7 +47,9 @@ RISC architecture that were developed at the University of California, Berkeley.
 
 ### From Software Applications to Hardware
 Application Software - System Software - Hardware chip
+
 Application software are enters into system software and system sodtware converts the entire program into binary language.
+
 *Operating System, Compiler, Assemblers*
 
 Operating system handles input/output operations and allocate memory also it manage the low level system functions.
@@ -57,11 +59,16 @@ Compiler takes the output from the operating system as programming languages suc
 Assembler take the instructions from compiler and convert them into binary numbers. This binary language send to hardware and hardware performs ouput based on the function.
 
 Instruction acts as abstract interface between C-language and the hardware.
+
 ![01 06 2024_20 25 44_REC](https://github.com/VIJAYAKUMARAHS/VSD-SoC_Design_and_Planning_Program/assets/89599199/a5d78a15-635b-4087-ad1f-7bd743b28e04)
 
 ![01 06 2024_20 27 55_REC](https://github.com/VIJAYAKUMARAHS/VSD-SoC_Design_and_Planning_Program/assets/89599199/a1e745b2-cbbd-4693-a3d9-8c1ff2858bac)
 
 ![01 06 2024_20 29 25_REC](https://github.com/VIJAYAKUMARAHS/VSD-SoC_Design_and_Planning_Program/assets/89599199/e113f08c-6cdb-47cb-93f2-6b53e86cf77e)
+
+## Soc design and OpenLANE
+### Introduction to all components of open-source digital asic design
+
 
 
 
