@@ -99,13 +99,40 @@ To design ASIC chips, few tools or things required. Those are
 
 ![01 06 2024_22 46 20_REC](https://github.com/VIJAYAKUMARAHS/Digital_VLSI_SoC_Design_and_Planning_Program/assets/89599199/63a34a9a-99f7-4c8e-a72b-80b37d3baf67)
 
-**Power planning** means to provide power to the every macros, standard cells, and all other cells are present in the design. Power and Ground nets are usually laid out on the metal layers. In this create power and ground structure for both IO pads and core logic.
+*Power planning:* means to provide power to the every macros, standard cells, and all other cells are present in the design. Power and Ground nets are usually laid out on the metal layers. In this create power and ground structure for both IO pads and core logic.
 
 ![01 06 2024_22 48 03_REC](https://github.com/VIJAYAKUMARAHS/Digital_VLSI_SoC_Design_and_Planning_Program/assets/89599199/6f0d29c3-de7e-478c-b10e-974a4657536c)
 
 
+**Step 3: Placement:-** Placement is the process of find the best place to place the standard cells in core area with less congestion, less timing violations and less DRV's.
 
- 
+![01 06 2024_22 50 07_REC](https://github.com/VIJAYAKUMARAHS/Digital_VLSI_SoC_Design_and_Planning_Program/assets/89599199/3abb1603-694b-4055-8e7c-b3342e978501)
+
+*There are two steps in placement*
+
+**1. Global placement:-** It is very first stage of the placement where cells are placed inside the core area for the first time looking at the timing and congestion.
+**2.Detailed placement:-** In detailed placements, we determined the exact route and layers for each netlist. the objective of detailed placement is valid routing, minimize area and meet timing constrains.
+
+![01 06 2024_23 05 38_REC](https://github.com/VIJAYAKUMARAHS/Digital_VLSI_SoC_Design_and_Planning_Program/assets/89599199/f332b681-156b-425f-8f91-691cd33e42d3)
+
+**Step 4: Clock Tree Synthesis:-** We have to route the clock. In the process of clock synthesis, we have distribute the clock to the every sequential elements. for example flipflops, registers, ADC, DAC ete. basically clock netwroks looks likes a tree. To minimize the clock skew by using the low-skew global routing resources for clock signals. Usually a tree is a H tree, X tree, fishbone tree etc.
+
+![01 06 2024_23 07 55_REC](https://github.com/VIJAYAKUMARAHS/Digital_VLSI_SoC_Design_and_Planning_Program/assets/89599199/cbde64ff-d120-44bb-905c-7837a061b463)
+
+![01 06 2024_23 12 51_REC](https://github.com/VIJAYAKUMARAHS/Digital_VLSI_SoC_Design_and_Planning_Program/assets/89599199/3ac93b7a-63c8-485e-9d96-344a3a8183c5)
+
+**Step 5: Routing:-** Making physical connections between signal pins using metal layers are called Routing. Routing is the stage after CTS and optimization where exact paths for the interconnection of standard cells and macros and I/O pins are determined. 
+
+The sky130 PDK defines the 6 routing leyers. the lowest leyer is called local interconnect layer (titanium nitride layer). Other five layers are alluminium layersIn the proccess of routing, metal trackes forms a routing grids and these grids are huge. so, devide and conquer approach is use for routing.
+![01 06 2024_23 16 51_REC](https://github.com/VIJAYAKUMARAHS/Digital_VLSI_SoC_Design_and_Planning_Program/assets/89599199/2ae21bfd-4950-4218-9c6f-2c801a32edfd)
+
+**Step 6: Sign Off:-** After the routing is completed. we started 
+
+Physical verification: DRCs, LVS, ERC.
+
+Timing Verification: Here Static Timing Analysis will done.
+
+
 
 
 
