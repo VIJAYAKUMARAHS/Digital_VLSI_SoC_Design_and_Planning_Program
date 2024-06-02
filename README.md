@@ -261,16 +261,26 @@ Lets explore all related files
 ### Design Preparation Step
 
 We have to enter in to the openlane path, type docker after 
-Here we use flow.tcl file open the tool in interactive mode
+Here we use flow.tcl file to open the tool in interactive mode
 
 ![02 06 2024_18 01 34_REC](https://github.com/VIJAYAKUMARAHS/Digital_VLSI_SoC_Design_and_Planning_Program/assets/89599199/1924f29c-a16f-4854-8794-c52f8000c7d1)
 
-I missed - here
+above i missed - here
 
 ![02 06 2024_18 02 44_REC](https://github.com/VIJAYAKUMARAHS/Digital_VLSI_SoC_Design_and_Planning_Program/assets/89599199/3d1d816d-3a34-4d6c-ad7c-bcb94541ebd4)
 
+Now we have to input the required packages
 
+![02 06 2024_18 08 16_REC](https://github.com/VIJAYAKUMARAHS/Digital_VLSI_SoC_Design_and_Planning_Program/assets/89599199/0a5b0971-8a71-4da4-9a54-1088bd1a2e46)
 
+Now its ready for the commands
+
+here we are opening the picorv32a.v design
+![02 06 2024_18 01 34_REC](https://github.com/VIJAYAKUMARAHS/Digital_VLSI_SoC_Design_and_Planning_Program/assets/89599199/b200d49d-d495-4488-91af-f18272863e20)
+
+Here we can see that the time period is set to the 5.00 nsec.
+
+![02 06 2024_18 02 44_REC](https://github.com/VIJAYAKUMARAHS/Digital_VLSI_SoC_Design_and_Planning_Program/assets/89599199/94f2cfd6-99d1-4de4-84bf-ef7e63c3c11f)
 
 
 
