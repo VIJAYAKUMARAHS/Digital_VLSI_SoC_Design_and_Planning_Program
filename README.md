@@ -185,9 +185,9 @@ Physical Verification (DRC and LVS) Magic is used for design Rules checking and 
 #### **NOTE:-**Before jump in to theis sesion we must install linux Ubuntu 18.04 using VirtualBox in your machine.
 
 **Lets learn some basic LINUX Commands:**
-1. ls - The most frequently used command in Linux to list directories
-2. pwd - Print working directory command in Linux
-cd - Linux command to navigate through directories
+1. **ls** - The most frequently used command in Linux to list directories
+2. **pwd** - Print working directory command in Linux
+3. **cd** - Linux command to navigate through directories
 mkdir - Command used to create directories in Linux
 mv - Move or rename files in Linux
 cp - Similar usage as mv but for copying files in Linux
