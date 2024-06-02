@@ -179,12 +179,16 @@ Static Timing analysis(STA) It involves the interconnect RC Extraction(DEF2SPEF)
 
 Physical Verification (DRC and LVS) Magic is used for design Rules checking and SPICE Extraction from Layout. Magic and Netgen are used for LVS.
 
+
+
+
+
 ## Get familiar to open-source EDA tools
 
 ### OpenLANE Directory structure in detail
 #### NOTE:- Before jump in to this session we must install linux Ubuntu 18.04 using VirtualBox in your machine.
 
-**Lets learn some basic LINUX Commands:**
+**Lets look at some basic LINUX Commands:**
 1. **ls** - The most frequently used command in Linux to list directories
 2. **pwd** - Print working directory command in Linux
 3. **cd** - Linux command to navigate through directories
@@ -236,6 +240,14 @@ Physical Verification (DRC and LVS) Magic is used for design Rules checking and 
 49. **useradd and usermod** - Add a new user or change existing user data
 50. **passwd** - Create or update passwords for existing users
 
+
+**checking the required files**: 
+we are working in openlane_working_dir
+explore about PDK
+**PDK** is process design kits openlane is works with Sky130_fd_sc_hd PDK, sky130" is process name or node name."fd" is a foundary name (skyWater foundary)."sc" means standerd cell librery files and the last one "hd" stands for high density
+
+Sky130_fd_sc_hd varient contains many technology files like verilog, spice, techlef, meglef,mag,gds,cdl,lib,lef,etc.
+![02 06 2024_17 04 54_REC](https://github.com/VIJAYAKUMARAHS/Digital_VLSI_SoC_Design_and_Planning_Program/assets/89599199/22f33653-954c-45f3-8934-eff29b268c37)
 
 
 
