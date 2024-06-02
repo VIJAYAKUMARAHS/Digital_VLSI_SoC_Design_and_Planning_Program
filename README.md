@@ -250,7 +250,24 @@ Sky130_fd_sc_hd varient contains many technology files like verilog, spice, tech
 
 ![02 06 2024_17 04 54_REC](https://github.com/VIJAYAKUMARAHS/Digital_VLSI_SoC_Design_and_Planning_Program/assets/89599199/990eb573-3741-43d4-aa5b-fa9d649cd647)
 
+Sky130_fd_sc_hd PDK
 
+![02 06 2024_17 27 06_REC](https://github.com/VIJAYAKUMARAHS/Digital_VLSI_SoC_Design_and_Planning_Program/assets/89599199/7e28a812-070f-4076-8db2-09ae2251e01a)
+
+Lets explore all related files
+
+![02 06 2024_17 45 50_REC](https://github.com/VIJAYAKUMARAHS/Digital_VLSI_SoC_Design_and_Planning_Program/assets/89599199/d00d450c-6af0-4e54-a0c5-a556400660c4)
+
+### Design Preparation Step
+
+We have to enter in to the openlane path, type docker after 
+Here we use flow.tcl file open the tool in interactive mode
+
+![02 06 2024_18 01 34_REC](https://github.com/VIJAYAKUMARAHS/Digital_VLSI_SoC_Design_and_Planning_Program/assets/89599199/1924f29c-a16f-4854-8794-c52f8000c7d1)
+
+I missed - here
+
+![02 06 2024_18 02 44_REC](https://github.com/VIJAYAKUMARAHS/Digital_VLSI_SoC_Design_and_Planning_Program/assets/89599199/3d1d816d-3a34-4d6c-ad7c-bcb94541ebd4)
 
 
 
