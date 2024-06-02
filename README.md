@@ -347,8 +347,10 @@ total cells = 14876
 flop ratio = 1613/14876 =0.1084*100 = 10.84%
 
 
+
+
  
-## Day 2 - Good floor planning considerations
+# Day 2 - Good floor planning considerations
 
 ### Chip Floor planning consideration
 
