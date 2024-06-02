@@ -323,12 +323,16 @@ https://github.com/efabless/openlane
 
 ![02 06 2024_19 54 55_REC](https://github.com/VIJAYAKUMARAHS/Digital_VLSI_SoC_Design_and_Planning_Program/assets/89599199/7efb6c45-4561-4487-bd3e-fae09b4fda29)
 
+
 Video source
+
 
 ![02 06 2024_20 18 34_REC](https://github.com/VIJAYAKUMARAHS/Digital_VLSI_SoC_Design_and_Planning_Program/assets/89599199/4195bca9-cbc7-4a99-a121-9232c013349b)
 
 
+
 ### Steps to characterize synthesis results
+
 
 
 In the bellow image i marked the total number of cells 14876 and D ff is 1613.
