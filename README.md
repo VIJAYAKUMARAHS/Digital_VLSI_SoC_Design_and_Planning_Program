@@ -313,7 +313,22 @@ Merged .lef content's
 
  ![02 06 2024_18 56 31_REC](https://github.com/VIJAYAKUMARAHS/Digital_VLSI_SoC_Design_and_Planning_Program/assets/89599199/af838681-bb03-4a41-a8f9-8bc077592b22)
 
+
+
+### OpenLANE Project Git Link Description
+
+About efabless openlane git repo and how github is helpfull to handle the data.
+
+https://github.com/efabless/openlane
+
+![02 06 2024_19 54 55_REC](https://github.com/VIJAYAKUMARAHS/Digital_VLSI_SoC_Design_and_Planning_Program/assets/89599199/7efb6c45-4561-4487-bd3e-fae09b4fda29)
+Video source
+
+![02 06 2024_20 18 34_REC](https://github.com/VIJAYAKUMARAHS/Digital_VLSI_SoC_Design_and_Planning_Program/assets/89599199/4195bca9-cbc7-4a99-a121-9232c013349b)
+
+
 ### Steps to characterize synthesis results
+
 
 
 
