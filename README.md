@@ -282,6 +282,38 @@ Here we can see that the time period is set to the 5.00 nsec.
 
 ![02 06 2024_18 14 10_REC](https://github.com/VIJAYAKUMARAHS/Digital_VLSI_SoC_Design_and_Planning_Program/assets/89599199/bac74b8a-6cc6-4e20-941a-050711f1cba0)
 
+we see in the openlane sky130_fd_sc_hd folder, the period is set about 24 nsec. so it is not override to the main file. If it override then give first priority to the main folder.
+
+![02 06 2024_18 23 30_REC](https://github.com/VIJAYAKUMARAHS/Digital_VLSI_SoC_Design_and_Planning_Program/assets/89599199/5eb504c8-0b2b-41f6-966e-ed3dd7e55068)
+
+
+we have to prepare design setup stage. for that command is prep -design picorv32a
+
+![02 06 2024_18 27 06_REC](https://github.com/VIJAYAKUMARAHS/Digital_VLSI_SoC_Design_and_Planning_Program/assets/89599199/3f1a8ad8-4412-4157-933d-66c8556f62ef)
+its merging the two lef files
+The above image shows the preparation complete
+
+### Review files after design prep and run synthesis
+
+After completing the preparation, in the picorv32a file, the run terictory is created. Inside the folder, Today's date is created.
+
+![02 06 2024_18 34 13_REC](https://github.com/VIJAYAKUMARAHS/Digital_VLSI_SoC_Design_and_Planning_Program/assets/89599199/a5e76340-56f6-4009-96c7-167db08e7149)
+
+![02 06 2024_18 37 48_REC](https://github.com/VIJAYAKUMARAHS/Digital_VLSI_SoC_Design_and_Planning_Program/assets/89599199/ec5a5066-dca9-4451-b392-0101cdcf6caa)
+
+Merged .lef content's
+
+![02 06 2024_18 40 06_REC](https://github.com/VIJAYAKUMARAHS/Digital_VLSI_SoC_Design_and_Planning_Program/assets/89599199/72f5f875-14e8-4e86-83eb-a760054a8272)
+
+ In the result folder is empty because till we have not run anything and in the report folder all the folders are there about synthesis, placement, floorplanning,cts,routing,magic,lvs.
+
+ now here also one config.tcl file is available similar like design folder. But this config.tcl file contains all default parameter taken by the run.
+
+ Now coming to the openlane, we are going to run the synthesis. for that command is run_synthesis It will take some 5 mnts to run the synthesis and finally synthesis will complited.
+
+ ![02 06 2024_18 56 31_REC](https://github.com/VIJAYAKUMARAHS/Digital_VLSI_SoC_Design_and_Planning_Program/assets/89599199/af838681-bb03-4a41-a8f9-8bc077592b22)
+
+### Steps to characterize synthesis results
 
 
 
