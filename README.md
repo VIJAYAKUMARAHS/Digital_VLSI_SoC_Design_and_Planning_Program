@@ -276,11 +276,14 @@ Now we have to input the required packages
 Now its ready for the commands
 
 here we are opening the picorv32a.v design
-![02 06 2024_18 01 34_REC](https://github.com/VIJAYAKUMARAHS/Digital_VLSI_SoC_Design_and_Planning_Program/assets/89599199/b200d49d-d495-4488-91af-f18272863e20)
 
+![02 06 2024_18 12 01_REC](https://github.com/VIJAYAKUMARAHS/Digital_VLSI_SoC_Design_and_Planning_Program/assets/89599199/8f6a0388-12ea-4996-95eb-9d2a06d739f2)
 Here we can see that the time period is set to the 5.00 nsec.
 
-![02 06 2024_18 02 44_REC](https://github.com/VIJAYAKUMARAHS/Digital_VLSI_SoC_Design_and_Planning_Program/assets/89599199/94f2cfd6-99d1-4de4-84bf-ef7e63c3c11f)
+![02 06 2024_18 14 10_REC](https://github.com/VIJAYAKUMARAHS/Digital_VLSI_SoC_Design_and_Planning_Program/assets/89599199/bac74b8a-6cc6-4e20-941a-050711f1cba0)
+
+
+
 
 
 
