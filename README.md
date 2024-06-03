@@ -634,6 +634,49 @@ place the physical view of the netlist onto the floorplan in such a fashion that
 ### Optimize placement using estimated wire-length and capacitance
 
 
+In optimize placement we will solve the problem of distancing. 
+ 
+Let's take an example of Din2 to FF1. There must be a wire going from Din2 to FF1 but before going into routing the wiring we will try to estimate the capacitances. If we look the capacitance from Din2 to FF1 it is every huge because wire length is huge in that case even the resitance will also be huge because of that length. If we send the signal from Din2 then it will be difficult reach FF1 to catch that input because distance is large. So we can place some intermediate (buffer's) steps to maitain the Signal integrity.
+
+![03 06 2024_16 15 02_REC](https://github.com/VIJAYAKUMARAHS/Digital_VLSI_SoC_Design_and_Planning_Program/assets/89599199/15a5d5e0-7abb-4be9-9ad7-2cbcf495fa7c)
+
+![03 06 2024_16 19 53_REC](https://github.com/VIJAYAKUMARAHS/Digital_VLSI_SoC_Design_and_Planning_Program/assets/89599199/d0ac3b0d-3e66-475b-b18a-24715cbec571)
+
+
+![03 06 2024_16 21 10_REC](https://github.com/VIJAYAKUMARAHS/Digital_VLSI_SoC_Design_and_Planning_Program/assets/89599199/c124ed50-9d26-4a11-b7a9-4806316901d0)
+
+considering the clock is ideal.
+
+### Need for libraries and characterization
+
+
+![03 06 2024_16 26 43_REC](https://github.com/VIJAYAKUMARAHS/Digital_VLSI_SoC_Design_and_Planning_Program/assets/89599199/5a7287c4-50ff-455c-b543-0db6ccc94635)
+
+In ICdesign Flow needs to go through the several steps. 
+
+first we need to convert the functionality(RTL) into legal hardware(gate level netlist) is refered to as Logic Synthesis. 
+
+next is logic synthesis to Floorplaning, in this we input the output of logic synthesis and decide the size of the Core and Die. 
+
+after floorplaning to Placement, in this we take the particular logic cell to place them on the core area in such a fashion that initial timing is better.
+
+CTS(Clock tree synthesis), here we take care of clk, should reach each and every flop at the same time also take care of each clk signal has equal rise and fall.
+
+Routing: routing has to go through the certain flow depending on characterization of the flip flop.
+
+STA(Static timing analysis), in this we try to see the set up time, hold time, maximum achieved frequency of the circuit.
+
+![03 06 2024_16 35 09_REC](https://github.com/VIJAYAKUMARAHS/Digital_VLSI_SoC_Design_and_Planning_Program/assets/89599199/eecb1459-eb2b-4464-a081-a4baf9a0531a)
+
+
+
+### Congestion aware placement using RePlAce
+
+The placement is done in two stages. Global(course placement) and detailed. In global placement, legalization is not happen but after detailed placement legalization will be done.
+
+When we run the run_placement, first Global placement is happens. main objective of global placement is to reducing the wire length.
+
+Now opening the Magic file to see actual view of standerd cells placement. 
 
 
 
@@ -647,7 +690,9 @@ place the physical view of the netlist onto the floorplan in such a fashion that
 
 
 
+## Cell design and characterization flows
 
+### Inputs for cell design flow
 
 
  
