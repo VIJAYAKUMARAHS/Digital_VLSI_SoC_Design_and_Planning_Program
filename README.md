@@ -466,9 +466,37 @@ we have to put De-coupling capacitor in parallel with the circuit. Every time th
 ### Power planning
 
 
+There is a signal which is send from driver to load and the signal is basically logic 0 to logic 1. Here we need to maintain the particular driver to load line with the same signal, so that the load recieves the same signal. Now power supply is applied. Now assume 16 bit bus has to retain the same signal from driver to the load. so it should get the sufficient power from the supply. But at this bus, there is no de-coupling capacitor is available because it is not physible to put capacitor at all over the place. now, power supply is far away from the bus, that is why some voltage drop between them will occur.
+
+![03 06 2024_10 34 30_REC](https://github.com/VIJAYAKUMARAHS/Digital_VLSI_SoC_Design_and_Planning_Program/assets/89599199/17a52bf4-f7c2-416e-b6f6-a28b1a77160b)
+
+Lets look at the 16bit bus
+
+![03 06 2024_10 38 32_REC](https://github.com/VIJAYAKUMARAHS/Digital_VLSI_SoC_Design_and_Planning_Program/assets/89599199/67226569-0783-4070-8aba-5ed10e8f5625)
+
+the problem is occurs due to all capacitor is connected to the single ground. This will cause a bump in 'ground' tap point during discharging. That bump is called as Ground Bounce.
+
+![03 06 2024_10 41 31_REC](https://github.com/VIJAYAKUMARAHS/Digital_VLSI_SoC_Design_and_Planning_Program/assets/89599199/1ea93754-a811-4dd9-b13e-ebc9692fa67b)
+
+now, capacitors which were'0' volts will have to charge to '1V'volts through single 'vdd'tap point. This will cause lowering of voltage at Vdd tap point.
+
+![03 06 2024_10 44 04_REC](https://github.com/VIJAYAKUMARAHS/Digital_VLSI_SoC_Design_and_Planning_Program/assets/89599199/a09a0b74-d065-4ac2-abd0-0bc26257936d)
+
+To solve this kind of problem instead of single power supply we create multiple VDD VSS lines.
+
+![03 06 2024_10 45 39_REC](https://github.com/VIJAYAKUMARAHS/Digital_VLSI_SoC_Design_and_Planning_Program/assets/89599199/652529d2-35c1-4de4-ae9d-23c3095cef90)
+
+In real design this is how we create power plan
+
+![03 06 2024_10 49 31_REC](https://github.com/VIJAYAKUMARAHS/Digital_VLSI_SoC_Design_and_Planning_Program/assets/89599199/1d1c96f0-6488-45c7-9f8b-af308305bca9)
 
 
-  
+### Pin placement and logical cell placement blockage
+
+
+
+
+
 
 
 
