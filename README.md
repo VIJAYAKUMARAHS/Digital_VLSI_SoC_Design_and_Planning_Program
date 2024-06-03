@@ -381,6 +381,95 @@ what is CORE and DIE section of a chip
 
 ![03 06 2024_09 32 25_REC](https://github.com/VIJAYAKUMARAHS/Digital_VLSI_SoC_Design_and_Planning_Program/assets/89599199/30bfe5d7-ac14-4868-ae5b-23c0c20057a7)
 
+Let's try to place that particular logic inside the core. The netlist will occupy the whole area inside the core it means it utilizes the core 100%.
+
+![03 06 2024_09 36 02_REC](https://github.com/VIJAYAKUMARAHS/Digital_VLSI_SoC_Design_and_Planning_Program/assets/89599199/9efa7f20-12ec-4244-b2a9-f7682508ca06)
+
+Utilization factor
+
+![03 06 2024_09 38 13_REC](https://github.com/VIJAYAKUMARAHS/Digital_VLSI_SoC_Design_and_Planning_Program/assets/89599199/dfc3e09e-73da-4ee7-be26-5c4b7d05bfa6)
+
+![03 06 2024_09 39 03_REC](https://github.com/VIJAYAKUMARAHS/Digital_VLSI_SoC_Design_and_Planning_Program/assets/89599199/daa6bf06-c3b5-4d29-8c24-fb257f84f64c)
+
+Utilization Factor = Area occupied by netlist / Total area of the core
+   
+ lets put the dimensions we have, we get
+ 
+ Utilization factor = 4*1sq.unit / 2unit *2unit
+ 
+		= 4sq unit /  4sq unit
+
+  Aspect ratio is 1. its represents your design is square shape, if aspect reatio is other than 1 your design is rectangle shape.
+
+  lets look at utilization factor is 0.5
+
+  ![03 06 2024_09 45 01_REC](https://github.com/VIJAYAKUMARAHS/Digital_VLSI_SoC_Design_and_Planning_Program/assets/89599199/f9506dfa-034d-4393-bf46-b2bf344e8912)
+
+Now lets look at the 25% utilization factor and aspect ratio is 1
+
+![03 06 2024_09 51 20_REC](https://github.com/VIJAYAKUMARAHS/Digital_VLSI_SoC_Design_and_Planning_Program/assets/89599199/8a09a5d8-2d65-4cd6-958c-7c98609b6eca)
+
+when comes to industrial projects they prefer 60% to 70% utilization and remaining 30 to 40% for the next procedure. and again its depending on the project.
+
+
+
+
+  ### Concept of pre-placed cells
+
+
+  Define loctions of pre placed cells
+
+  Lets take a combinational logic which does some amount of function.
+  Cut them in to two parts
+  now, there two blocks and these are implemented separately.
+
+  ![03 06 2024_10 00 08_REC](https://github.com/VIJAYAKUMARAHS/Digital_VLSI_SoC_Design_and_Planning_Program/assets/89599199/473d3cc2-b28f-44a0-8cf0-5214e68b821c)
+
+  lets separate this in to two different black box. if we do this because we use them separately. 
+  **Concept of REFUSE** 
+
+  ![03 06 2024_10 02 19_REC](https://github.com/VIJAYAKUMARAHS/Digital_VLSI_SoC_Design_and_Planning_Program/assets/89599199/3e913875-4903-4b8c-b8b3-6022efee020d)
+
+lets look at some readily available IPs
+
+![03 06 2024_10 07 04_REC](https://github.com/VIJAYAKUMARAHS/Digital_VLSI_SoC_Design_and_Planning_Program/assets/89599199/37899738-7657-4971-8fde-49a5b0f23ffa)
+
+Now try to understand the some IPs, this are designed only once then used multiple time when ever they required. this are directly place and core area and then we have to fix them before placement.
+
+![03 06 2024_10 12 22_REC](https://github.com/VIJAYAKUMARAHS/Digital_VLSI_SoC_Design_and_Planning_Program/assets/89599199/2ba732d3-e8b7-4533-a01f-667bb0577c20)
+
+After placing Pre placed cells then we surround them with de-coupling capacitor's.
+
+
+### De-coupling capacitors
+
+Let consider some circuit, which is the part of the blocks which has been described earlier. When some gate (let consider AND gate) switched from 0 to 1 or 1 to 0, considered amount of the switching current required because of available small capacitance . This capacitor should be completely charged to represent logic 1 and completly discharged to represent logic 0. Consider capacitance to be 0. Rdd,Ldd,and Lss are well defoned values. During switvhing operation, the circuit demands switching current i.e. peak current. Now, due to the presence of Rdd and Ldd, there will be a voltage drop across them and the voltage at Node 'A' would be Vdd' instead of Vdd.
+
+![03 06 2024_10 18 03_REC](https://github.com/VIJAYAKUMARAHS/Digital_VLSI_SoC_Design_and_Planning_Program/assets/89599199/e2a5a5f0-bde5-4c03-be04-3d6a965372af)
+
+
+![03 06 2024_10 19 15_REC](https://github.com/VIJAYAKUMARAHS/Digital_VLSI_SoC_Design_and_Planning_Program/assets/89599199/5c4a2cdf-249c-4d84-bea9-ed991db3f5b7)
+
+Noise margins diagram
+
+![03 06 2024_10 20 21_REC](https://github.com/VIJAYAKUMARAHS/Digital_VLSI_SoC_Design_and_Planning_Program/assets/89599199/a195b8c3-9253-4282-99cf-69a95f5c58a8)
+
+
+we have to put De-coupling capacitor in parallel with the circuit. Every time the circuit switches, it draws current from Cd, whereas, the RL network is used to replenish the charge into Cd. And the amount of current needed for the circuit is supplied by the De- Coupling Capacitor.
+
+![03 06 2024_10 23 47_REC](https://github.com/VIJAYAKUMARAHS/Digital_VLSI_SoC_Design_and_Planning_Program/assets/89599199/63238377-928d-4db5-b03f-768af5673ab7)
+
+![03 06 2024_10 27 06_REC](https://github.com/VIJAYAKUMARAHS/Digital_VLSI_SoC_Design_and_Planning_Program/assets/89599199/1ff040a2-cd7c-40a7-a54d-6b946eeeb7b9)
+
+
+
+### Power planning
+
+
+
+
+  
+
 
 
 
