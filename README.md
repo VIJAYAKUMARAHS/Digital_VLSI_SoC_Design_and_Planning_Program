@@ -525,6 +525,26 @@ Now the froorplan is ready for the placement of standard cells.
 
 Lets start with the floorplan, Before run the floorplanning, we required some switches for the floorplanning. these we can get from the configuration from openlane. the command is run_floorplan.
 
+![03 06 2024_12 40 55_REC](https://github.com/VIJAYAKUMARAHS/Digital_VLSI_SoC_Design_and_Planning_Program/assets/89599199/b576f2bc-6299-4217-bb74-6759720865c0)
+
+in this you can variables required for the every stage in the design
+
+![03 06 2024_12 43 10_REC](https://github.com/VIJAYAKUMARAHS/Digital_VLSI_SoC_Design_and_Planning_Program/assets/89599199/82ed654f-cdc2-401b-a780-0a39735fc2e6)
+
+Here we can see that the core utilization ratio is 50% (bydefault) and aspect ratio is 1 (bydefault). similarly other information is also given.
+
+if we want to change anything here we have to change this switchs 
+this are available at .tcl file in the directory.
+
+Lets see the floorplan.tcl file contents
+
+![03 06 2024_12 52 56_REC](https://github.com/VIJAYAKUMARAHS/Digital_VLSI_SoC_Design_and_Planning_Program/assets/89599199/c2257f1a-465e-43a1-80a7-8ede30775c34)
+
+In the OpenLANE lower priority is given to system default (floorplanning.tcl), the next priority is given to config.tcl and then priority is given to PDK varient.tcl (sky130A_sky130_fd_sc_hd_congig.tcl).
+
+
+
+
 
 
 
