@@ -542,6 +542,17 @@ Lets see the floorplan.tcl file contents
 
 In the OpenLANE lower priority is given to system default (floorplanning.tcl), the next priority is given to config.tcl and then priority is given to PDK varient.tcl (sky130A_sky130_fd_sc_hd_congig.tcl).
 
+![03 06 2024_14 19 03_REC](https://github.com/VIJAYAKUMARAHS/Digital_VLSI_SoC_Design_and_Planning_Program/assets/89599199/15b7cf32-ef59-49e6-9fc5-1d6daabcc61d)
+
+
+### Review floorplan files and steps to view floorplan
+
+
+Lets look at the logs 
+![03 06 2024_14 16 39_REC](https://github.com/VIJAYAKUMARAHS/Digital_VLSI_SoC_Design_and_Planning_Program/assets/89599199/c43f8b00-b9e3-43aa-b05e-563fa3e81401)
+
+
+
 
 
 
