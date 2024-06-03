@@ -674,16 +674,16 @@ STA(Static timing analysis), in this we try to see the set up time, hold time, m
 
 The placement is done in two stages. Global(course placement) and detailed. In global placement, legalization is not happen but after detailed placement legalization will be done.
 
-When we run the run_placement, first Global placement is happens. main objective of global placement is to reducing the wire length.
+When we run the command (run_placement), first Global placement is happens. main objective of global placement is to reducing the wire length.
+placement result
+
+![03 06 2024_19 22 05_REC](https://github.com/VIJAYAKUMARAHS/Digital_VLSI_SoC_Design_and_Planning_Program/assets/89599199/4aae4f50-609e-4bf7-8723-2845e0c0a1f5)
 
 Now opening the Magic file to see actual view of standerd cells placement. 
 
+lets see the standard cells
 
-
-
-
-
-
+![03 06 2024_19 25 14_REC](https://github.com/VIJAYAKUMARAHS/Digital_VLSI_SoC_Design_and_Planning_Program/assets/89599199/c35a0d3c-03a9-46f9-831b-199c904aa356)
 
 
 
@@ -695,7 +695,8 @@ Now opening the Magic file to see actual view of standerd cells placement.
 ### Inputs for cell design flow
 
 
- 
+
+
 
 
 
