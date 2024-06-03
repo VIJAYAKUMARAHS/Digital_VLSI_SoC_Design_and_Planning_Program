@@ -598,15 +598,40 @@ Lets check the vertical pin details.
 ![03 06 2024_15 35 56_REC](https://github.com/VIJAYAKUMARAHS/Digital_VLSI_SoC_Design_and_Planning_Program/assets/89599199/59e0ebcb-13a5-4dba-b8de-2baa7a96e612)
 these are TAP cells
 
-Now, lets see the where standard cells are presents, usually they are present at 0,0 location.
+Now, lets see the where standard cells are presents, usually they are present at (0,0) location.
 
 ![03 06 2024_15 38 49_REC](https://github.com/VIJAYAKUMARAHS/Digital_VLSI_SoC_Design_and_Planning_Program/assets/89599199/2f3f26c7-35ca-4f30-b878-83cd95992107)
 
 
+## Library building and Placement
+
+### Netlist binding and initial place design
+
+Lets look in to the placement and routings stage of the physical desugn. the very frist step in this is bind netlist with physical cells
+
+![03 06 2024_15 48 55_REC](https://github.com/VIJAYAKUMARAHS/Digital_VLSI_SoC_Design_and_Planning_Program/assets/89599199/25c9cc2c-39ca-444e-91c9-93fb70a5b3ba)
+
+In reality this is how look like
+
+![03 06 2024_15 51 04_REC](https://github.com/VIJAYAKUMARAHS/Digital_VLSI_SoC_Design_and_Planning_Program/assets/89599199/ee6b5e9e-64bd-4356-a79a-4cb0f7fd7b67)
+
+Lets look at varies flavours of standard cells
+
+![03 06 2024_15 55 15_REC](https://github.com/VIJAYAKUMARAHS/Digital_VLSI_SoC_Design_and_Planning_Program/assets/89599199/e49b8140-0410-4759-9d24-3d058377d593)
+
+Now moving on to the placement, We have the floorplan with inout and output ports, we have particular netlist, and we have particular size given to each component of this netlist. So we have the physical view of the logic gates. Next step is to place the netlist onto the floorplan. We have to take the connectivity information from the netlist and design the physical view gates on the floorplan.
+
+![03 06 2024_15 59 01_REC](https://github.com/VIJAYAKUMARAHS/Digital_VLSI_SoC_Design_and_Planning_Program/assets/89599199/ee7b164f-d38d-4bfc-9e9f-0b906b83e3e8)
+
+we have the floorplan where we have the pre placed cells locations are not affected they are kept as it as and the second thing which will be taken care of that is no cell should be placed over the pre-placed cells.
+
+place the physical view of the netlist onto the floorplan in such a fashion that logical connectivity should be maintained and that particular circuit should interact with their input and output ports to maintain the timing and the delay will be minimal.
+
+![03 06 2024_16 06 14_REC](https://github.com/VIJAYAKUMARAHS/Digital_VLSI_SoC_Design_and_Planning_Program/assets/89599199/f9594047-c252-4d84-930b-fd2dd6910f32)
 
 
 
-
+### Optimize placement using estimated wire-length and capacitance
 
 
 
