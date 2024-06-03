@@ -356,6 +356,30 @@ flop ratio = 1613/14876 =0.1084*100 = 10.84%
 
 ### Utilization factor and aspect ratio
 
+In this section lets cover the width and hight of the floor plan. this the first step toword the Physical design.
+
+![03 06 2024_09 20 49_REC](https://github.com/VIJAYAKUMARAHS/Digital_VLSI_SoC_Design_and_Planning_Program/assets/89599199/fd3828b0-1899-46f8-b9cd-600dc9fd504c)
+
+Begin with a netlist, netlist is two flipflops and have a simple combination logic in between.
+
+![03 06 2024_09 23 23_REC](https://github.com/VIJAYAKUMARAHS/Digital_VLSI_SoC_Design_and_Planning_Program/assets/89599199/60203070-9c8b-4ccb-901d-037e1153c555)
+
+All the combinational and sequential are taking in to rectangle shape
+
+![03 06 2024_09 26 27_REC](https://github.com/VIJAYAKUMARAHS/Digital_VLSI_SoC_Design_and_Planning_Program/assets/89599199/9d1627d1-c643-4f4e-9013-be1f034c607f)
+
+standard cell have dimensions of 1unit*1unit
+
+So, area= 1 Sq. units
+
+Asuume same area for the flipflop as well = 1 Sq. units
+
+
+![03 06 2024_09 28 46_REC](https://github.com/VIJAYAKUMARAHS/Digital_VLSI_SoC_Design_and_Planning_Program/assets/89599199/cc387ce9-10b3-49b5-a257-3086f1069dd8)
+
+what is CORE and DIE section of a chip
+
+![03 06 2024_09 32 25_REC](https://github.com/VIJAYAKUMARAHS/Digital_VLSI_SoC_Design_and_Planning_Program/assets/89599199/30bfe5d7-ac14-4868-ae5b-23c0c20057a7)
 
 
 
