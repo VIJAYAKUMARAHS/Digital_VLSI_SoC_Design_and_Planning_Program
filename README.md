@@ -827,6 +827,27 @@ Transition time
 
 
 
+## Day 3 - Design library cell using Magic Layout and ngspice characterization
+
+### Labs for CMOS inverter ngspice simulations
+
+### IO placer revision
+
+
+Till now, we have done floor planning and run placement also. But if we want to change the floorplanning, for example, in our floor planning, pins are at equal distance and if we want to change it then we can also make it by Set command.
+
+For that first we have to check the switches in the configuration and from that we have to take the syntax "env(FP_IO_MODE) 1". and make it to the "env(FP_IO_MODE) 2". then again run the floorplanning.
+
+Then check the changes in the pins location through magic -T.
+magic -T /home/vsduser/Desktop/work/tools/openlane_working_dir/pdks/sky130A/libs.tech/magic/sky130A.tech lef read ../../tmp/merged.lef def read picorv32a.floorplan.def &
+
+![03 06 2024_21 56 34_REC](https://github.com/VIJAYAKUMARAHS/Digital_VLSI_SoC_Design_and_Planning_Program/assets/89599199/d75d2c35-3525-40f3-a8ac-e34b6f3a4a87)
+
+
+
+
+
+
 
 
 
