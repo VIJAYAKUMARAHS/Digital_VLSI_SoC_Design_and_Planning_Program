@@ -844,16 +844,107 @@ magic -T /home/vsduser/Desktop/work/tools/openlane_working_dir/pdks/sky130A/libs
 ![03 06 2024_21 56 34_REC](https://github.com/VIJAYAKUMARAHS/Digital_VLSI_SoC_Design_and_Planning_Program/assets/89599199/d75d2c35-3525-40f3-a8ac-e34b6f3a4a87)
 
 
+### SPICE deck creation for CMOS inverter
+
+spice deck:- it's the connectivity information about the netlist so basically it's a netlist.It has input that are provided to the simulation and the deck points which will take the output.
+
+Component connectivity:- In this we need to define the connectivity of the substrate pin. Substrate pin tunes the threshold voltage of the PMOS and NMOS.
+
+Component values:- Values for the PMOS nad NMOS. We have taken the same size of both PMOS and NMOS.
+
+Identify the nodes:- Node mean the points between which there is a component.These nodes are required to define the netlist.
+
+![03 06 2024_22 22 31_REC](https://github.com/VIJAYAKUMARAHS/Digital_VLSI_SoC_Design_and_Planning_Program/assets/89599199/17bedf0d-6533-4bf9-9901-a6d5569f0e24)
+
+Name of the nodes:- name these nodes as Vin, Vss, Vdd, out.
+
+![03 06 2024_22 24 15_REC](https://github.com/VIJAYAKUMARAHS/Digital_VLSI_SoC_Design_and_Planning_Program/assets/89599199/3cfc4d8a-f593-4eee-aab0-4dabfc5e51e2)
+
+### SPICE simulation lab for CMOS inverter
+
+Lets describes the spice deck
+
+PMOS information
+
+![03 06 2024_22 28 24_REC](https://github.com/VIJAYAKUMARAHS/Digital_VLSI_SoC_Design_and_Planning_Program/assets/89599199/65c4c38c-f866-406a-bd8a-fee31af39e68)
+
+
+NMOS information
+
+![03 06 2024_22 30 03_REC](https://github.com/VIJAYAKUMARAHS/Digital_VLSI_SoC_Design_and_Planning_Program/assets/89599199/e120203a-7b0f-4578-beb3-d91e03162a9d)
+
+Output load capacitance
+
+![03 06 2024_22 32 03_REC](https://github.com/VIJAYAKUMARAHS/Digital_VLSI_SoC_Design_and_Planning_Program/assets/89599199/c0efb665-7207-480f-ac54-156104524f62)
+
+next they mention vdd is 0 to 2.5v and vin is 0 to 2.5v
+
+simulation commands in which we are swiping the Vin from 0 to 2.5 with the stepsize of 0.05. Because we want Vout while changing the Vin.![03 06 2024_22 35 40_REC](https://github.com/VIJAYAKUMARAHS/Digital_VLSI_SoC_Design_and_Planning_Program/assets/89599199/bce686f8-e2e5-4141-888e-ce1415983595)
+
+![03 06 2024_22 36 42_REC](https://github.com/VIJAYAKUMARAHS/Digital_VLSI_SoC_Design_and_Planning_Program/assets/89599199/d9cea9ce-cdee-43b1-a15d-913ac1f0ccf4)
 
 
 
+Now we will do the SPICE simulation for the particular values. And will get the graph.
+![03 06 2024_22 40 20_REC](https://github.com/VIJAYAKUMARAHS/Digital_VLSI_SoC_Design_and_Planning_Program/assets/89599199/6a9e8499-7feb-487a-bb8b-518d4aa5b17a)
+
+Now, doing other simulation in which we change the PMOS width to 3 times of NMOS width. and after diong the simulation, we get the graph like this shown below
+
+![03 06 2024_22 43 02_REC](https://github.com/VIJAYAKUMARAHS/Digital_VLSI_SoC_Design_and_Planning_Program/assets/89599199/278f2264-9305-49a0-b90b-d894b5643705)
 
 
 
+### Switching Threshold Vm
+
+By comparing this both the graph we can understang the concept of switching thresold voltage.
+
+![03 06 2024_22 47 39_REC](https://github.com/VIJAYAKUMARAHS/Digital_VLSI_SoC_Design_and_Planning_Program/assets/89599199/4ec1f377-b9e1-4866-bde3-92725f0a9c41)
+
+
+In the below grape we can identify that the PMOS and NMOS are liase in which region. The direction of current flowing is different for NMOS and PMOS.
+
+![03 06 2024_22 50 26_REC](https://github.com/VIJAYAKUMARAHS/Digital_VLSI_SoC_Design_and_Planning_Program/assets/89599199/17c5278b-43ae-4022-8af7-6771e2c69b04)
+
+![03 06 2024_22 52 59_REC](https://github.com/VIJAYAKUMARAHS/Digital_VLSI_SoC_Design_and_Planning_Program/assets/89599199/41bd1999-55c6-4859-8eff-a33018b28777)
 
 
 
+### Static and dynamic simulation of CMOS inverter
 
+
+In Dynamic simulation we will know about the rise and fall delay of CMOS inverter and how does it varying with Vm. In this simulation everything else will remian same except the input which is provided will be a pulse and simulation command will be .tran
+
+The graph Time vs Voltage will be plotted here from where we can calculate the rise and fall delay.
+
+![03 06 2024_22 55 40_REC](https://github.com/VIJAYAKUMARAHS/Digital_VLSI_SoC_Design_and_Planning_Program/assets/89599199/731a17d4-3a85-48b5-b95f-c22624bc78f5)
+
+![03 06 2024_22 56 39_REC](https://github.com/VIJAYAKUMARAHS/Digital_VLSI_SoC_Design_and_Planning_Program/assets/89599199/24bb2f21-5cad-4f17-a004-701ec234c157)
+ 
+
+### Lab steps to git clone vsdstdcelldesign
+
+Lets get clone the VSDSTDCELLDESIGN from the nickson-jose github.com
+
+![03 06 2024_23 08 52_REC](https://github.com/VIJAYAKUMARAHS/Digital_VLSI_SoC_Design_and_Planning_Program/assets/89599199/8349b973-3a79-4a49-b0bb-86d6741dce3a)
+
+![03 06 2024_23 14 06_REC](https://github.com/VIJAYAKUMARAHS/Digital_VLSI_SoC_Design_and_Planning_Program/assets/89599199/70f79180-f54b-4dce-8f46-fe2f367a237b)
+
+Lets copt the sky130A.tech file
+
+![03 06 2024_23 20 16_REC](https://github.com/VIJAYAKUMARAHS/Digital_VLSI_SoC_Design_and_Planning_Program/assets/89599199/75ec08b8-0905-49f0-9a50-4761d0aac707)
+
+![03 06 2024_23 21 13_REC](https://github.com/VIJAYAKUMARAHS/Digital_VLSI_SoC_Design_and_Planning_Program/assets/89599199/31d4797e-7ca4-4236-aa8e-93c3b1961296)
+
+Now, here to see the layout in magic, we don't need to write the whole address 
+
+![03 06 2024_23 25 13_REC](https://github.com/VIJAYAKUMARAHS/Digital_VLSI_SoC_Design_and_Planning_Program/assets/89599199/434970e5-9c62-4aee-9714-4ab2b9618b28)
+
+
+
+## Inception of layout and CMOS fabrication process
+
+
+### Create Active regions
 
 
 
