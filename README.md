@@ -694,6 +694,144 @@ lets see the standard cells
 
 ### Inputs for cell design flow
 
+Lets understand Cell Design Flow, Gates, flipflops, buffers are named as 'Standard Cells'. These standard cells are being placed in the section called as 'Library'.
+
+![03 06 2024_19 38 00_REC](https://github.com/VIJAYAKUMARAHS/Digital_VLSI_SoC_Design_and_Planning_Program/assets/89599199/598f101a-6b9e-444e-8daf-df4a29da8d24)
+
+See the different drive strength cells
+
+![03 06 2024_19 41 43_REC](https://github.com/VIJAYAKUMARAHS/Digital_VLSI_SoC_Design_and_Planning_Program/assets/89599199/477d6460-db5f-4a70-bb01-e44b09030384)
+
+Library consists standard cells with different vt flavors, drive strength etc..
+
+![03 06 2024_19 45 28_REC](https://github.com/VIJAYAKUMARAHS/Digital_VLSI_SoC_Design_and_Planning_Program/assets/89599199/b522f715-0191-4c0e-aec5-ebd3815c132e)
+
+The inverter has to represented in form of the shape, drive strength, power charracteristic and so on. Here cell design flow is devided into three parts.
+
+i. Inputs
+
+ii. Design steps
+
+iii. Outputs
+
+Inputs:- Inputs required for cell design is PDKs, DRC and LVS rules SPICE models, library and user defined specs. In DRC & LVS rules tech file is provided which contains design rules and actual values. Rules can be converted in to code. SPICE MODEL tells about threshold voltage equation.
+
+![03 06 2024_19 48 31_REC](https://github.com/VIJAYAKUMARAHS/Digital_VLSI_SoC_Design_and_Planning_Program/assets/89599199/03d9e89b-b004-4572-a01c-2fe763bddc71)
+
+SPICE module parameters
+
+![03 06 2024_19 51 37_REC](https://github.com/VIJAYAKUMARAHS/Digital_VLSI_SoC_Design_and_Planning_Program/assets/89599199/43aec052-a304-4f87-bebf-b19d548fc9dd)
+
+
+### Circuit design step
+
+
+The seperation between the power rail and the ground rail defines the cell height. Cell width depends upon the timing and drive strength.
+
+![03 06 2024_19 58 12_REC](https://github.com/VIJAYAKUMARAHS/Digital_VLSI_SoC_Design_and_Planning_Program/assets/89599199/cf093c28-b8e2-4e3b-991a-8aa690641c66)
+
+
+### Layout design step
+
+Lets look the layout design, based on the function we hace to design the PMOS and NMOS circuits.then draw the network grap.
+
+![03 06 2024_20 02 47_REC](https://github.com/VIJAYAKUMARAHS/Digital_VLSI_SoC_Design_and_Planning_Program/assets/89599199/d9d11be6-73ef-4cc0-9f82-54bcba667838)
+
+Euler's path and stick diagram.
+![03 06 2024_20 04 23_REC](https://github.com/VIJAYAKUMARAHS/Digital_VLSI_SoC_Design_and_Planning_Program/assets/89599199/dc5b25c5-f621-404c-9839-61539a50d4ba)
+
+![03 06 2024_20 05 51_REC](https://github.com/VIJAYAKUMARAHS/Digital_VLSI_SoC_Design_and_Planning_Program/assets/89599199/13d2dd49-7674-4c4e-b92e-941c45611394)
+
+Typical layout look like
+![03 06 2024_20 08 23_REC](https://github.com/VIJAYAKUMARAHS/Digital_VLSI_SoC_Design_and_Planning_Program/assets/89599199/2cef0536-e854-4f33-b918-b071f27e6f84)
+
+
+
+
+### Typical characterization flow
+
+
+
+Let's try to build the characterization flow based on the inputs we have.
+
+![03 06 2024_20 12 15_REC](https://github.com/VIJAYAKUMARAHS/Digital_VLSI_SoC_Design_and_Planning_Program/assets/89599199/e91139ac-8a53-4fb1-abea-0983c8e6481e)
+
+
+![03 06 2024_20 14 59_REC](https://github.com/VIJAYAKUMARAHS/Digital_VLSI_SoC_Design_and_Planning_Program/assets/89599199/6c26791d-90a4-4f4a-9450-6ab1ede49108)
+
+
+![03 06 2024_20 15 57_REC](https://github.com/VIJAYAKUMARAHS/Digital_VLSI_SoC_Design_and_Planning_Program/assets/89599199/1e2a9112-5043-4247-89a7-c546f62ff77e)
+
+
+feed in all this inputs from 1 to 8 in a form of a configuration file to the characterization software "GUNA" .
+
+This software will generate power, noise and timing model.
+
+![03 06 2024_20 17 49_REC](https://github.com/VIJAYAKUMARAHS/Digital_VLSI_SoC_Design_and_Planning_Program/assets/89599199/d663d2d4-661c-4a6c-b16e-3422ef74e49b)
+
+
+
+
+## General timing characterization parameters
+
+### Timing threshold definitions
+
+
+in the previous section we have inverter connected back to back, we have power sources, we have the stimulus applied to the inverter all these things brings a very important point of understanding differenet threshold points of a waveform itself and it is called as "Timing threshold definitions'.
+
+Slew_high_rise_thr
+
+![03 06 2024_20 21 25_REC](https://github.com/VIJAYAKUMARAHS/Digital_VLSI_SoC_Design_and_Planning_Program/assets/89599199/dfca80f6-801d-45e1-9cc1-c98767603671)
+
+ the typically value of this is about 20% it could be 30% as well.
+
+ Slew_low_fall_thr
+
+ ![03 06 2024_20 24 42_REC](https://github.com/VIJAYAKUMARAHS/Digital_VLSI_SoC_Design_and_Planning_Program/assets/89599199/577589d1-c8b3-4393-be61-2c7c8cf38015)
+
+ ![03 06 2024_20 25 32_REC](https://github.com/VIJAYAKUMARAHS/Digital_VLSI_SoC_Design_and_Planning_Program/assets/89599199/03af3c89-80b7-4f39-a39e-75b6eb6d17be)
+
+Typical value is 50%
+
+Rise waveforms
+
+ ![03 06 2024_20 27 39_REC](https://github.com/VIJAYAKUMARAHS/Digital_VLSI_SoC_Design_and_Planning_Program/assets/89599199/c339cb17-915c-43e9-96a3-9e74d4fb78cd)
+
+Fall waveforms 
+![03 06 2024_20 30 12_REC](https://github.com/VIJAYAKUMARAHS/Digital_VLSI_SoC_Design_and_Planning_Program/assets/89599199/7b66e0bf-def2-46d0-9d8d-106aa8bb7cf5)
+
+Based on the above 8 values we are going to calculate slew, propagation delay and many things
+
+
+
+### Propagation delay and transition time
+
+If we want to calculate the delay of anything we need to subtract the out_rise_thr from in_rise_thr. Here let's take typical value 50%, let's see on the particular waveform how does it works Time delay = Time(out_thr)-time(in_thr).
+
+![03 06 2024_20 36 00_REC](https://github.com/VIJAYAKUMARAHS/Digital_VLSI_SoC_Design_and_Planning_Program/assets/89599199/9966c818-fa31-40b9-a451-dc6e606239f8)
+
+
+![03 06 2024_20 38 05_REC](https://github.com/VIJAYAKUMARAHS/Digital_VLSI_SoC_Design_and_Planning_Program/assets/89599199/ebd202ec-f91e-4d4d-9348-0829a7410998)
+
+In the above example in_rise_thr and out_fall)thr was kept at 50%. But if the threshold ponit moves to the top the the output comes before the input and we see negative delay and negative delays are not accepted. So the reason behind having this negative delay is poor choice od threshold point so thr choice of the threshold point is really important.
+
+![03 06 2024_20 39 25_REC](https://github.com/VIJAYAKUMARAHS/Digital_VLSI_SoC_Design_and_Planning_Program/assets/89599199/249499ae-5b5f-42df-88ee-152e28b582ac)
+
+Let's take another example where we have choosed threshold point correctly but still can get a negative delay. Because uotput comes before the input that's why we are getting negative delay here, which is not accepted
+
+![03 06 2024_20 41 19_REC](https://github.com/VIJAYAKUMARAHS/Digital_VLSI_SoC_Design_and_Planning_Program/assets/89599199/d33db897-157a-4538-a87f-9c0b195b28f1)
+
+Transition time
+
+![03 06 2024_20 43 37_REC](https://github.com/VIJAYAKUMARAHS/Digital_VLSI_SoC_Design_and_Planning_Program/assets/89599199/d1692b6e-2284-425d-95a3-4654d0f07614)
+
+
+
+
+
+
+
+
 
 
 
