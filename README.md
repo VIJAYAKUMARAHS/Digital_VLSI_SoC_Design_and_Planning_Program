@@ -519,6 +519,14 @@ Now the froorplan is ready for the placement of standard cells.
 
 
 
+### Steps to run floorplan using OpenLANE
+
+**LABS**
+
+Lets start with the floorplan, Before run the floorplanning, we required some switches for the floorplanning. these we can get from the configuration from openlane. the command is run_floorplan.
+
+
+
 
 
 
