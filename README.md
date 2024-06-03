@@ -491,7 +491,38 @@ In real design this is how we create power plan
 ![03 06 2024_10 49 31_REC](https://github.com/VIJAYAKUMARAHS/Digital_VLSI_SoC_Design_and_Planning_Program/assets/89599199/1d1c96f0-6488-45c7-9f8b-af308305bca9)
 
 
+
+
 ### Pin placement and logical cell placement blockage
+
+
+
+Now lets look at the pin placement or port placement part in a design. pin placement is nothing but every macros, standard ceslls are having a input pins and outputs accordingly.
+to give a connection to those pin we are usig metal layers in the design. basad on the cells or macros we connect them to the pins at  what ever direction they are belongs.
+To understand it better lets go through this example
+
+![03 06 2024_11 07 27_REC](https://github.com/VIJAYAKUMARAHS/Digital_VLSI_SoC_Design_and_Planning_Program/assets/89599199/b6171bd6-e482-4fa0-9c4f-c0959140e7b7)
+
+below we have 6 in pins and 5 out pins.
+
+Now we are placing these pins in to the die space on the site rows.
+
+![03 06 2024_11 51 23_REC](https://github.com/VIJAYAKUMARAHS/Digital_VLSI_SoC_Design_and_Planning_Program/assets/89599199/5a510e63-a85e-4a08-91e2-2e5065099e86)
+
+after the pins placement we logical cell placement blockage to avoid the standards cells placement in that area.
+
+
+![03 06 2024_11 54 42_REC](https://github.com/VIJAYAKUMARAHS/Digital_VLSI_SoC_Design_and_Planning_Program/assets/89599199/f8af318f-20d8-4f94-a3ad-f6c9da5806cf)
+
+Now the froorplan is ready for the placement of standard cells.
+
+
+
+
+
+
+
+
 
 
 
