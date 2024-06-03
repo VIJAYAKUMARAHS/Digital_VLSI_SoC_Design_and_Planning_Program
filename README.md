@@ -543,6 +543,7 @@ Lets see the floorplan.tcl file contents
 In the OpenLANE lower priority is given to system default (floorplanning.tcl), the next priority is given to config.tcl and then priority is given to PDK varient.tcl (sky130A_sky130_fd_sc_hd_congig.tcl).
 
 ![03 06 2024_14 19 03_REC](https://github.com/VIJAYAKUMARAHS/Digital_VLSI_SoC_Design_and_Planning_Program/assets/89599199/15b7cf32-ef59-49e6-9fc5-1d6daabcc61d)
+here floorplan completed
 
 
 ### Review floorplan files and steps to view floorplan
@@ -550,6 +551,58 @@ In the OpenLANE lower priority is given to system default (floorplanning.tcl), t
 
 Lets look at the logs 
 ![03 06 2024_14 16 39_REC](https://github.com/VIJAYAKUMARAHS/Digital_VLSI_SoC_Design_and_Planning_Program/assets/89599199/c43f8b00-b9e3-43aa-b05e-563fa3e81401)
+
+In the run folder, we can see the connfig.tcl file. this file contains all the configuration that are taken by the flow. if we open the config.tcl file, then we can see that which are the parameters are accepted in the current flow.
+
+![03 06 2024_14 48 33_REC](https://github.com/VIJAYAKUMARAHS/Digital_VLSI_SoC_Design_and_Planning_Program/assets/89599199/be3d3055-1c9f-4c46-bbe4-e642961d9dc6)
+
+![03 06 2024_14 35 48_REC](https://github.com/VIJAYAKUMARAHS/Digital_VLSI_SoC_Design_and_Planning_Program/assets/89599199/79ac4972-a13e-49a0-addc-f41547c94916)
+
+![03 06 2024_14 38 21_REC](https://github.com/VIJAYAKUMARAHS/Digital_VLSI_SoC_Design_and_Planning_Program/assets/89599199/2db04671-ad26-40f9-b38e-ef4535e2efee)
+
+To watch how floorplane looks, we have to go in the results. in the result, one def( design exchange formate) file is available. if we open this file, we can see all information about die area (0 0) (660685 671405), unit distance in micron (1000). it means 1 micron means 1000 databased units. so 660685 and 671405 are databased units. and if we devide this by 1000 then we can get the dimensions of chips in micrometer.
+
+
+![03 06 2024_14 41 28_REC](https://github.com/VIJAYAKUMARAHS/Digital_VLSI_SoC_Design_and_Planning_Program/assets/89599199/6b68f289-6882-4c12-9ede-e8ca3f0718c6)
+
+so, the width of chip is 660.685 micrometer and height of the chip is 671.405 micrometer.
+
+
+### Review floorplan layout in Magic
+
+To see the actual layout after the flow, we have to open the magic file by adding the command  
+magic -T /home/vsduser/Desktop/work/tools/openlane_working_dir/pdks/sky130A/libs.tech/magic/sky130A.tech lef read ../../tmp/merged.lef def read picorv32a.floorplan.def
+
+And then after pressing the enter, Magic file will open. here we can see the layout.
+
+![03 06 2024_15 10 04_REC](https://github.com/VIJAYAKUMARAHS/Digital_VLSI_SoC_Design_and_Planning_Program/assets/89599199/8c81533d-feaa-4834-bcd2-54e3c185928f)
+
+when the magic tool opens with floorplan that time the image is not in centre to make that in to centre use "s" to select then use "v" to align to center.
+
+To zoom a magic frist left click then drag then right click on mouse. after selecting press z on keyboard for zoom in and press shift z for zoom out.
+
+![03 06 2024_15 17 49_REC](https://github.com/VIJAYAKUMARAHS/Digital_VLSI_SoC_Design_and_Planning_Program/assets/89599199/ba9faff7-5617-40f4-97d8-d498dd242ade)
+
+Lets check the input ports
+
+![03 06 2024_15 21 07_REC](https://github.com/VIJAYAKUMARAHS/Digital_VLSI_SoC_Design_and_Planning_Program/assets/89599199/11d5c593-830e-4d01-ba5d-99f118486151)
+
+Lets check the horizontal pin details.
+
+![03 06 2024_15 27 13_REC](https://github.com/VIJAYAKUMARAHS/Digital_VLSI_SoC_Design_and_Planning_Program/assets/89599199/021eb5de-cdef-4929-8c3c-a38295d75077)
+
+Lets check the vertical pin details.
+
+![03 06 2024_15 30 39_REC](https://github.com/VIJAYAKUMARAHS/Digital_VLSI_SoC_Design_and_Planning_Program/assets/89599199/37845b52-f7ba-4e08-85da-9ca7f764b873)
+
+![03 06 2024_15 35 56_REC](https://github.com/VIJAYAKUMARAHS/Digital_VLSI_SoC_Design_and_Planning_Program/assets/89599199/59e0ebcb-13a5-4dba-b8de-2baa7a96e612)
+these are TAP cells
+
+Now, lets see the where standard cells are presents, usually they are present at 0,0 location.
+
+![03 06 2024_15 38 49_REC](https://github.com/VIJAYAKUMARAHS/Digital_VLSI_SoC_Design_and_Planning_Program/assets/89599199/2f3f26c7-35ca-4f30-b878-83cd95992107)
+
+
 
 
 
