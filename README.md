@@ -973,6 +973,75 @@ we have to check the source of the PMOS is connected to the ground or not. and s
 
 
 
+### Lab steps to create std cell layout and extract spice netlist
+
+
+using github repo he explained stpes to create a standard cell layout. https://github.com/nickson-jose/vsdstdcelldesign.git
+
+![04 06 2024_10 21 53_REC](https://github.com/VIJAYAKUMARAHS/Digital_VLSI_SoC_Design_and_Planning_Program/assets/89599199/7e5dfd57-0a7d-4fc3-a64a-a6d15d55859a)
+
+Lets check the DRC. how drcs are comming, if i select part the nwell in the layout and delete that, drcs will occurs. you see that in the image.
+![04 06 2024_10 48 30_REC](https://github.com/VIJAYAKUMARAHS/Digital_VLSI_SoC_Design_and_Planning_Program/assets/89599199/778d3fe8-0c98-49c4-8b60-3cd044a05611)
+
+To extract the file from here, we have to write the command in tckon window. comand is **extract all**
+
+![04 06 2024_10 56 58_REC](https://github.com/VIJAYAKUMARAHS/Digital_VLSI_SoC_Design_and_Planning_Program/assets/89599199/a13aa5a6-c58f-4c71-83ad-67e68154766b)
+
+Now see weather the file is extracted or not.
+
+![04 06 2024_10 59 01_REC](https://github.com/VIJAYAKUMARAHS/Digital_VLSI_SoC_Design_and_Planning_Program/assets/89599199/49b4fc2d-5e84-4912-8704-03f4d3326815)
+
+we will use this .ext file to create the spice file to be use with our ngspice tool. for that we have apply the command ext2spice cthresh 0 rthresh 0. this will not create anything new. now again we have to type ext2spice command in tckon window.
+
+![04 06 2024_11 03 45_REC](https://github.com/VIJAYAKUMARAHS/Digital_VLSI_SoC_Design_and_Planning_Program/assets/89599199/f2fed993-2b66-4c9a-b673-ebfb874095aa)
+
+atfter see file created or not
+![04 06 2024_11 09 03_REC](https://github.com/VIJAYAKUMARAHS/Digital_VLSI_SoC_Design_and_Planning_Program/assets/89599199/de306540-15f9-46c6-bb78-4c47d6992aae)
+
+![04 06 2024_11 10 07_REC](https://github.com/VIJAYAKUMARAHS/Digital_VLSI_SoC_Design_and_Planning_Program/assets/89599199/02a079af-f2b7-4b85-b9c5-7a179caa968c)
+
+Now, lets see what is there in this file
+
+![04 06 2024_11 12 35_REC](https://github.com/VIJAYAKUMARAHS/Digital_VLSI_SoC_Design_and_Planning_Program/assets/89599199/60fa3bb5-ac1c-4a9d-8243-1ca9b04add68)
+
+
+
+## Sky130 Tech File Labs
+
+### Lab steps to create final SPICE deck using Sky130 tech
+
+we can see the all details about the connectivity of the NMOS and PMOS and about the power supply also.
+
+![04 06 2024_11 12 35_REC](https://github.com/VIJAYAKUMARAHS/Digital_VLSI_SoC_Design_and_Planning_Program/assets/89599199/889634e5-6d77-495e-8280-daa3bba6c8ec)
+
+![04 06 2024_11 53 40_REC](https://github.com/VIJAYAKUMARAHS/Digital_VLSI_SoC_Design_and_Planning_Program/assets/89599199/577a30bd-f302-4314-a266-a85f526e8881)
+
+X0 is NMOS and X1 is PMOS and both's connectivity is shown as GATE DRAIN SUBSTATE SOURCE.
+
+![04 06 2024_12 03 12_REC](https://github.com/VIJAYAKUMARAHS/Digital_VLSI_SoC_Design_and_Planning_Program/assets/89599199/fda7eb34-0ecd-4d12-bbc3-a71036231ee8)
+
+Now we have to include the PMOS and NMOS lib files. it is inside the libs folder in the vsdstdcellsdesign folder.
+
+![04 06 2024_12 12 37_REC](https://github.com/VIJAYAKUMARAHS/Digital_VLSI_SoC_Design_and_Planning_Program/assets/89599199/fcc1618b-7370-4ae3-afec-9b18c069b794)
+
+now we include this file path in the file by **.include ./libs/pshort.lib** and **.include ./libs/nshort.lib**
+
+set the supply voltage "VDD" to 3.3v by VDD VPWR 0 3.3V command. and similarly set the value of VSS also.
+
+we need to specify the input files. by Va A VGND PULSE(0V 3.3V 0 0.1ns 2ns 4ns)
+add the command for the analysis like, .tran 1n 20n, .control , run,.endc,.end.
+
+![04 06 2024_12 38 25_REC](https://github.com/VIJAYAKUMARAHS/Digital_VLSI_SoC_Design_and_Planning_Program/assets/89599199/b545a3f9-ca24-478e-aa48-89b58d7ac884)
+
+lets run the ngspice command is ngspice sky130.inv.spice
+
+![04 06 2024_12 51 10_REC](https://github.com/VIJAYAKUMARAHS/Digital_VLSI_SoC_Design_and_Planning_Program/assets/89599199/7e687c59-0611-4c96-907b-48a37ae6f10c)
+
+ploting the graph here by command, plot y vs time a
+
+
+
+
 
 
 
