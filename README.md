@@ -1047,35 +1047,18 @@ ploting the graph here by command, plot y vs time a
 
 we have to find value of 4 parameters.
 
-**Rise time**
-it is time taken to the output waveform to 20% value to 80% value.
+![04 06 2024_14 35 59_REC](https://github.com/VIJAYAKUMARAHS/Digital_VLSI_SoC_Design_and_Planning_Program/assets/89599199/0582232d-3509-4ad2-9879-1927bf6bc37f)
 
-To get values we have select the graph for 20% point and zoom
 
-![04 06 2024_14 53 47_REC](https://github.com/VIJAYAKUMARAHS/Digital_VLSI_SoC_Design_and_Planning_Program/assets/89599199/5044773a-2cf6-4d69-b127-4bfef2244668)
+Rise time = time taken to rise to 80% – time taken to rise 20% = 2.1887 ns – 2.1299 ns = 0.0588ns = 58.8 ps
 
-fall time
-it is the time take by output for transition from 80% to 20%.
+Fall time = (time taken to fall by 80%) - (time taken to fall by 20%) = 4.0753 – 4.0497 = 0.0266ns = 25.6 ps
 
-![04 06 2024_15 04 43_REC](https://github.com/VIJAYAKUMARAHS/Digital_VLSI_SoC_Design_and_Planning_Program/assets/89599199/bbe563dd-18d9-4e1b-8a3f-3bbc6256a5b5)
+Propagation delay for rising output = (time taken to rise to 50%) – (time taken to fall to 50%) = 2.1765 – 2.1436 = 0.03653ns = 32.9 ps
 
-so, rise time= (4.09512 - 4.05264)e-09 = 42.51 psec.
+Propagation delay for falling output = (time taken to fall to 50%) – (time taken to rise to 50%) = 4.0552 - 4.0511 = 0.00323 = 4.1 ps
 
-propagation delay
-it is the time difference between the 50% of input and 50% of the output.
 
-![04 06 2024_15 05 35_REC](https://github.com/VIJAYAKUMARAHS/Digital_VLSI_SoC_Design_and_Planning_Program/assets/89599199/210fdc51-861f-4d76-98d7-cd6999f5e363)
-
-so, propogation delay =(2.2106 - 2.15012)e-09 = 60.48 psec.
-
-cell fall delay
-it is time for output falling to 50% and input is rising to 50%.
-
-![04 06 2024_15 06 23_REC](https://github.com/VIJAYAKUMARAHS/Digital_VLSI_SoC_Design_and_Planning_Program/assets/89599199/ea2fc9a1-9874-4116-aa70-9c5ea5ba7d8f)
-
-so, cell fall delay =(4.07735 - 4.04988)e-09 = 27.47 psec.
-
-We have successfully characterized our inverter. Our next objective is to create a lef file using the layout and we will plugin this lef file in the picorv32a core
 
 
 
