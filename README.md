@@ -1150,9 +1150,31 @@ lets load the sky130A.tech file
 ![04 06 2024_20 24 43_REC](https://github.com/VIJAYAKUMARAHS/Digital_VLSI_SoC_Design_and_Planning_Program/assets/89599199/9a6cd5d2-b300-4300-a97d-1ab2e4e5d6cf)
 
 
-
-
-
-
-
 ### Lab exercise to implement poly resistor spacing to diff and tap
+
+![04 06 2024_20 49 29_REC](https://github.com/VIJAYAKUMARAHS/Digital_VLSI_SoC_Design_and_Planning_Program/assets/89599199/1c51369e-521d-45bb-b1da-f1d279712f0f)
+
+
+### Lab challenge exercise to describe DRC error as geometrical construct
+
+Load nwell.mag and see for errors after that run the below commands
+
+![04 06 2024_20 58 23_REC](https://github.com/VIJAYAKUMARAHS/Digital_VLSI_SoC_Design_and_Planning_Program/assets/89599199/3c35b1a0-9f87-4db5-bc88-0d6dfdbaf808)
+
+lets do some changes in sky130A.tech
+
+![04 06 2024_21 06 58_REC](https://github.com/VIJAYAKUMARAHS/Digital_VLSI_SoC_Design_and_Planning_Program/assets/89599199/4a08a4bb-9152-4436-b3ed-4b23c48a68d7)
+
+![04 06 2024_21 08 43_REC](https://github.com/VIJAYAKUMARAHS/Digital_VLSI_SoC_Design_and_Planning_Program/assets/89599199/28d43b6b-59a5-482e-9f9e-3d815e1e15f8)
+
+![04 06 2024_21 11 21_REC](https://github.com/VIJAYAKUMARAHS/Digital_VLSI_SoC_Design_and_Planning_Program/assets/89599199/f895f23e-cf52-41a7-ab9e-f7209bf2a014)
+
+![04 06 2024_21 19 41_REC](https://github.com/VIJAYAKUMARAHS/Digital_VLSI_SoC_Design_and_Planning_Program/assets/89599199/5d1de6b5-dda0-44a7-b3d3-9a0de54caec7)
+
+### Lab challenge to find missing or incorrect rules and fix them
+
+![04 06 2024_21 37 00_REC](https://github.com/VIJAYAKUMARAHS/Digital_VLSI_SoC_Design_and_Planning_Program/assets/89599199/017de7ae-e294-4f0b-b02f-8ad92855a368)
+
+
+
+
