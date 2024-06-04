@@ -1221,3 +1221,60 @@ after the command grid 0.46um 0.34um 0.23um 0.17um
 ### Lab steps to convert magic layout to std cell LEF
 
 
+Now, we will need to decide on the port name and its values. we can set the values for different ports, and for the power and ground port, we will need to make changes in the 'attach to layer' as Metal1.
+
+![04 06 2024_22 43 05_REC](https://github.com/VIJAYAKUMARAHS/Digital_VLSI_SoC_Design_and_Planning_Program/assets/89599199/84c3537a-1f66-42df-9520-7361ae88132b)
+like that you have to change but now here already everything is set.
+
+lets extract the lef file
+
+save the file before
+![04 06 2024_22 50 26_REC](https://github.com/VIJAYAKUMARAHS/Digital_VLSI_SoC_Design_and_Planning_Program/assets/89599199/3d81583d-b81b-4bec-a642-3973bd929d83)
+
+![04 06 2024_22 53 51_REC](https://github.com/VIJAYAKUMARAHS/Digital_VLSI_SoC_Design_and_Planning_Program/assets/89599199/fcf3f875-608b-4b78-9dca-1ffe9f38c278)
+
+write lef with the command lef write
+
+![04 06 2024_22 58 15_REC](https://github.com/VIJAYAKUMARAHS/Digital_VLSI_SoC_Design_and_Planning_Program/assets/89599199/bd157e0c-dd76-4003-a4a0-3ff50bab8306)
+
+see the lef file is created
+![04 06 2024_23 01 44_REC](https://github.com/VIJAYAKUMARAHS/Digital_VLSI_SoC_Design_and_Planning_Program/assets/89599199/5d375b2b-765e-4af0-91cf-2c466b53c9e7)
+
+loook at the contents of lef file
+
+![04 06 2024_23 04 39_REC](https://github.com/VIJAYAKUMARAHS/Digital_VLSI_SoC_Design_and_Planning_Program/assets/89599199/dde2632a-b551-4e0b-a915-0a492469fe4a)
+
+Now we will copy it to the src folder
+
+![04 06 2024_23 14 54_REC](https://github.com/VIJAYAKUMARAHS/Digital_VLSI_SoC_Design_and_Planning_Program/assets/89599199/d09800f5-2527-42e0-9d2b-2cff140eab75)
+
+![04 06 2024_23 15 41_REC](https://github.com/VIJAYAKUMARAHS/Digital_VLSI_SoC_Design_and_Planning_Program/assets/89599199/3fa61b43-97ae-4188-be81-b07cdc0c4385)
+
+![04 06 2024_23 18 58_REC](https://github.com/VIJAYAKUMARAHS/Digital_VLSI_SoC_Design_and_Planning_Program/assets/89599199/9f9426b9-fbfe-4658-92d6-90f12d3526f1)
+
+lets copy the corner file to scr directory
+
+![04 06 2024_23 27 25_REC](https://github.com/VIJAYAKUMARAHS/Digital_VLSI_SoC_Design_and_Planning_Program/assets/89599199/ab1aa224-c8d5-4064-947c-f1c4447f940a)
+
+Before to the next step we have to modify the config.tcl
+
+![04 06 2024_23 35 40_REC](https://github.com/VIJAYAKUMARAHS/Digital_VLSI_SoC_Design_and_Planning_Program/assets/89599199/e4d91e87-a08b-4dba-94a7-d2d77e96d7f6)
+
+Now we run the synthesis again but now with the added lef
+
+![04 06 2024_23 43 28_REC](https://github.com/VIJAYAKUMARAHS/Digital_VLSI_SoC_Design_and_Planning_Program/assets/89599199/70cdbf1b-a988-43dd-87ed-4713d4bf8c57)
+
+![04 06 2024_23 58 48_REC](https://github.com/VIJAYAKUMARAHS/Digital_VLSI_SoC_Design_and_Planning_Program/assets/89599199/d8c6c461-8ae1-4943-8b64-f1ecb886918d)
+
+After running the synthesis 
+![05 06 2024_00 04 28_REC](https://github.com/VIJAYAKUMARAHS/Digital_VLSI_SoC_Design_and_Planning_Program/assets/89599199/16810af2-0909-4ec0-b942-b50fb8dc882f)
+
+
+Although tns and wns was slightly decreased that was not a good results so we need to do something with respect to the timing
+Hence we will try using the synthesis strategy switch and see whether delay is reduced or not
+
+
+
+
+
+
