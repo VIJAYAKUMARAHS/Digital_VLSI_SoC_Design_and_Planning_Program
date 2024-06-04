@@ -1176,5 +1176,12 @@ lets do some changes in sky130A.tech
 ![04 06 2024_21 37 00_REC](https://github.com/VIJAYAKUMARAHS/Digital_VLSI_SoC_Design_and_Planning_Program/assets/89599199/017de7ae-e294-4f0b-b02f-8ad92855a368)
 
 
+## Day 4 - Pre-layout timing analysis and importance of good clock tree
+
+### Timing modeling using delay tables
+
+### Lab steps to convert grid info to track info
+
+
 
 
