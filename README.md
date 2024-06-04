@@ -1049,6 +1049,7 @@ we have to find value of 4 parameters.
 
 ![04 06 2024_14 35 59_REC](https://github.com/VIJAYAKUMARAHS/Digital_VLSI_SoC_Design_and_Planning_Program/assets/89599199/0582232d-3509-4ad2-9879-1927bf6bc37f)
 
+![04 06 2024_19 07 44_REC](https://github.com/VIJAYAKUMARAHS/Digital_VLSI_SoC_Design_and_Planning_Program/assets/89599199/d8272a36-0683-4f0c-8636-4949b97ba4cc)
 
 Rise time = time taken to rise to 80% – time taken to rise 20% = 2.1887 ns – 2.1299 ns = 0.0588ns = 58.8 ps
 
@@ -1104,6 +1105,32 @@ Use the command magic -d XR
 
 
 ### Lab introduction to Magic and steps to load Sky130 tech-rules
+
+open the magic tool. Open the met3.mag file from the file menu. we will see different layouts with different DRC values
+
+![04 06 2024_19 09 24_REC](https://github.com/VIJAYAKUMARAHS/Digital_VLSI_SoC_Design_and_Planning_Program/assets/89599199/8e36e4f3-7e4d-41bd-bcd9-faa4321da1d4)
+
+![04 06 2024_19 11 38_REC](https://github.com/VIJAYAKUMARAHS/Digital_VLSI_SoC_Design_and_Planning_Program/assets/89599199/dde0a6e0-619f-4712-a0d7-560b0fc5a5b9)
+
+Now we will select the any layout area and check drc why in tckon.
+
+![04 06 2024_19 19 06_REC](https://github.com/VIJAYAKUMARAHS/Digital_VLSI_SoC_Design_and_Planning_Program/assets/89599199/71233f3c-97d9-438d-b094-32f37b353ecb)
+
+![04 06 2024_19 21 07_REC](https://github.com/VIJAYAKUMARAHS/Digital_VLSI_SoC_Design_and_Planning_Program/assets/89599199/d6eb9be6-06ed-4176-b3c5-3f94a9290eca)
+
+Place the mouse pointer at m3 contact and click on the p to paint it in the box which we have created
+
+![04 06 2024_19 26 35_REC](https://github.com/VIJAYAKUMARAHS/Digital_VLSI_SoC_Design_and_Planning_Program/assets/89599199/6178c9c3-3637-4b09-8aa6-adc25e880c93)
+
+![04 06 2024_19 41 48_REC](https://github.com/VIJAYAKUMARAHS/Digital_VLSI_SoC_Design_and_Planning_Program/assets/89599199/ac36467b-4c9f-4a63-b549-b0b6b760b348)
+
+![04 06 2024_19 47 13_REC](https://github.com/VIJAYAKUMARAHS/Digital_VLSI_SoC_Design_and_Planning_Program/assets/89599199/662a344c-06dd-47a8-aa8e-92f8451ac68d)
+
+
+### Lab exercise to fix poly.9 error in Sky130 tech-file
+
+
+
 
 
 
