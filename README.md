@@ -948,6 +948,12 @@ Now, here to see the layout in magic, we don't need to write the whole address
 
 
 
+### Lab introduction to Sky130 basic layers layout and LEF using inverter
+
+In sky130, every color is showing the different layer. here the first layer is for local interconnect shown by blue_purple color, then second layer is metal 1 which is shown by light purple color, and the metal 2 is shown by pink color. N-well is shown by solide das line. green is N-diffusion region. and red is for polysilicon gate. similarly the brown color is for P-diffusion.
+
+
+
 
 
 
