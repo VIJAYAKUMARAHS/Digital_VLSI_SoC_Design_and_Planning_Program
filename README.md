@@ -1059,8 +1059,51 @@ Propagation delay for rising output = (time taken to rise to 50%) – (time take
 Propagation delay for falling output = (time taken to fall to 50%) – (time taken to rise to 50%) = 4.0552 - 4.0511 = 0.00323 = 4.1 ps
 
 
+### Lab introduction to Magic tool options and DRC rules
+
+![04 06 2024_15 42 09_REC](https://github.com/VIJAYAKUMARAHS/Digital_VLSI_SoC_Design_and_Planning_Program/assets/89599199/f9f1b84a-c65e-4107-b917-017b07fccd15)
 
 
+To know about the Magic DRC we can go to the website:- http://opencircuitdesign.com/magic/Technologyfiles/TheMagicTechnologyFileManual/DrcSection
+
+Link to Google_Skywaters Design Rules: - https://skywater-pdk.readthedocs.io/en/main/rules/periphery.html
+
+For reference , we can use the github repo of Google-Skywater: - https://github.com/google/skywater-pdk
+
+
+
+
+### Lab introduction to Sky130 pdk's and steps to download labs
+
+Follow the below steps:
+
+First go to the home directory.
+
+To download the lab files for performing DRC corrections: **wget http://opencircuitdesign.com/open_pdks/archive/drc_tests.tgz**
+
+To extract the lab files from the downloaded file: **tar xfz drc_tests.tgz**
+
+Then go inside the lab folder **drc_tests**
+
+list all the directories, use command **ls -al**
+
+Lets view the .magicrc file, use the command **gvim .magicrc** 
+This file serves as the startup script file for magic tool and tells it where to find the technology file. 
+The technology file is already available locally in the same directory, so we can make changes to it if needed.
+
+To start the magic tool with better graphics, we can use the command **magic -d XR &**
+
+![04 06 2024_16 12 22_REC](https://github.com/VIJAYAKUMARAHS/Digital_VLSI_SoC_Design_and_Planning_Program/assets/89599199/34276964-aac1-4124-a1b7-68e8ef9c2b91)
+
+To view the Content of .magicrc file, open using command **vi .magicrc**
+
+![04 06 2024_16 17 08_REC](https://github.com/VIJAYAKUMARAHS/Digital_VLSI_SoC_Design_and_Planning_Program/assets/89599199/5ca50efa-ff1d-4fe6-ae79-d5b78bd6b50a)
+
+Use the command magic -d XR
+![04 06 2024_16 20 53_REC](https://github.com/VIJAYAKUMARAHS/Digital_VLSI_SoC_Design_and_Planning_Program/assets/89599199/8d293b7a-1eed-4636-aa51-64a239edd145)
+
+
+### Lab introduction to Magic and steps to load Sky130 tech-rules
 
 
 
