@@ -1142,7 +1142,7 @@ Open poly.mag file or type load poly
 ![04 06 2024_20 05 40_REC](https://github.com/VIJAYAKUMARAHS/Digital_VLSI_SoC_Design_and_Planning_Program/assets/89599199/ad68f6dc-916f-4249-9ad5-a134b00b325e)
 change allpolynonres
 ![04 06 2024_20 13 50_REC](https://github.com/VIJAYAKUMARAHS/Digital_VLSI_SoC_Design_and_Planning_Program/assets/89599199/a2839b2b-26de-41e7-b36b-dca5fa70705a)
-
+![04 06 2024_20 19 24_REC](https://github.com/VIJAYAKUMARAHS/Digital_VLSI_SoC_Design_and_Planning_Program/assets/89599199/5b0bbb18-8f6c-48d1-96bd-5b280427f9b9)
 lets load the sky130A.tech file
 
 ![04 06 2024_20 23 09_REC](https://github.com/VIJAYAKUMARAHS/Digital_VLSI_SoC_Design_and_Planning_Program/assets/89599199/fe910f1d-1a4b-4321-a8e0-f4808389d324)
@@ -1150,7 +1150,7 @@ lets load the sky130A.tech file
 ![04 06 2024_20 24 43_REC](https://github.com/VIJAYAKUMARAHS/Digital_VLSI_SoC_Design_and_Planning_Program/assets/89599199/9a6cd5d2-b300-4300-a97d-1ab2e4e5d6cf)
 
 
-![04 06 2024_20 19 24_REC](https://github.com/VIJAYAKUMARAHS/Digital_VLSI_SoC_Design_and_Planning_Program/assets/89599199/5b0bbb18-8f6c-48d1-96bd-5b280427f9b9)
+
 
 
 
