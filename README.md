@@ -1182,6 +1182,42 @@ lets do some changes in sky130A.tech
 
 ### Lab steps to convert grid info to track info
 
+till now we have done with the design setup , floorplan , placement and finally learned about the stdcell characterization using the mag file
 
+For the placement of the new cell in the existing design we may not need the all intricate details ( mag file)
+
+Only information is needed is about the boundaries pwr,gnd,out ports
+
+That’s where lef file is generated which is gives the overview of the cell
+
+By doing this one can secure the IP (Intellectual property) by hiding the exact details and showing the necessary details only
+
+First of all, we need to check for the std cell guidelines
+
+The input and output ports must lie on the intersection of vertical and horizontal tracks
+
+The width of the standard cell must be the multiple powers of the track pitch
+
+Now we can open the track file from pdk/sky130/libs.tech /openlane/sky130_fd_sc_hd/track.info to get more information on this.
+
+![04 06 2024_22 11 57_REC](https://github.com/VIJAYAKUMARAHS/Digital_VLSI_SoC_Design_and_Planning_Program/assets/89599199/951971ee-ebbd-48f8-b19a-8f05fe477908)
+
+![04 06 2024_22 20 22_REC](https://github.com/VIJAYAKUMARAHS/Digital_VLSI_SoC_Design_and_Planning_Program/assets/89599199/283846fd-79ba-4ead-ae44-1b702898b83d)
+
+The track is used during the routing stage and is essentially a trace of metal layers such as metal 1, metal 2, etc.
+
+PNR is automated, so we need to specify where we want the routes to go. This specification is given by tracks. Each of the tracks is placed at (0.23, 0.46)um horizontally and (0.17, 0.34)um vertically for li1, metal 1, and metal 2 layers.
+
+before grids are look like
+
+![04 06 2024_22 29 06_REC](https://github.com/VIJAYAKUMARAHS/Digital_VLSI_SoC_Design_and_Planning_Program/assets/89599199/9ba0e28b-cde5-4e06-b8f3-d6df26426187)
+
+after the command grid 0.46um 0.34um 0.23um 0.17um
+
+![04 06 2024_22 33 33_REC](https://github.com/VIJAYAKUMARAHS/Digital_VLSI_SoC_Design_and_Planning_Program/assets/89599199/6385b493-850e-43de-8cf7-ec27ac6652c5)
+
+![04 06 2024_22 36 03_REC](https://github.com/VIJAYAKUMARAHS/Digital_VLSI_SoC_Design_and_Planning_Program/assets/89599199/cbd15acd-4078-4ec1-b154-80210c395296)
+
+### Lab steps to convert magic layout to std cell LEF
 
 
