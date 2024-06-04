@@ -1031,17 +1031,51 @@ set the supply voltage "VDD" to 3.3v by VDD VPWR 0 3.3V command. and similarly s
 we need to specify the input files. by Va A VGND PULSE(0V 3.3V 0 0.1ns 2ns 4ns)
 add the command for the analysis like, .tran 1n 20n, .control , run,.endc,.end.
 
-![04 06 2024_12 38 25_REC](https://github.com/VIJAYAKUMARAHS/Digital_VLSI_SoC_Design_and_Planning_Program/assets/89599199/b545a3f9-ca24-478e-aa48-89b58d7ac884)
+![04 06 2024_14 33 23_REC](https://github.com/VIJAYAKUMARAHS/Digital_VLSI_SoC_Design_and_Planning_Program/assets/89599199/9cd158e0-e323-45be-91d1-cedbb46ed77e)
 
 lets run the ngspice command is ngspice sky130.inv.spice
 
-![04 06 2024_12 51 10_REC](https://github.com/VIJAYAKUMARAHS/Digital_VLSI_SoC_Design_and_Planning_Program/assets/89599199/7e687c59-0611-4c96-907b-48a37ae6f10c)
+![04 06 2024_14 34 44_REC](https://github.com/VIJAYAKUMARAHS/Digital_VLSI_SoC_Design_and_Planning_Program/assets/89599199/34aeb6be-966d-4a86-aa58-603c63ee580e)
 
 ploting the graph here by command, plot y vs time a
 
+![04 06 2024_14 35 59_REC](https://github.com/VIJAYAKUMARAHS/Digital_VLSI_SoC_Design_and_Planning_Program/assets/89599199/0582232d-3509-4ad2-9879-1927bf6bc37f)
 
 
 
+### Lab steps to characterize inverter using sky130 model files
+
+we have to find value of 4 parameters.
+
+**Rise time**
+it is time taken to the output waveform to 20% value to 80% value.
+
+To get values we have select the graph for 20% point and zoom
+
+![04 06 2024_14 53 47_REC](https://github.com/VIJAYAKUMARAHS/Digital_VLSI_SoC_Design_and_Planning_Program/assets/89599199/5044773a-2cf6-4d69-b127-4bfef2244668)
+
+fall time
+it is the time take by output for transition from 80% to 20%.
+
+![04 06 2024_15 04 43_REC](https://github.com/VIJAYAKUMARAHS/Digital_VLSI_SoC_Design_and_Planning_Program/assets/89599199/bbe563dd-18d9-4e1b-8a3f-3bbc6256a5b5)
+
+so, rise time= (4.09512 - 4.05264)e-09 = 42.51 psec.
+
+propagation delay
+it is the time difference between the 50% of input and 50% of the output.
+
+![04 06 2024_15 05 35_REC](https://github.com/VIJAYAKUMARAHS/Digital_VLSI_SoC_Design_and_Planning_Program/assets/89599199/210fdc51-861f-4d76-98d7-cd6999f5e363)
+
+so, propogation delay =(2.2106 - 2.15012)e-09 = 60.48 psec.
+
+cell fall delay
+it is time for output falling to 50% and input is rising to 50%.
+
+![04 06 2024_15 06 23_REC](https://github.com/VIJAYAKUMARAHS/Digital_VLSI_SoC_Design_and_Planning_Program/assets/89599199/ea2fc9a1-9874-4116-aa70-9c5ea5ba7d8f)
+
+so, cell fall delay =(4.07735 - 4.04988)e-09 = 27.47 psec.
+
+We have successfully characterized our inverter. Our next objective is to create a lef file using the layout and we will plugin this lef file in the picorv32a core
 
 
 
