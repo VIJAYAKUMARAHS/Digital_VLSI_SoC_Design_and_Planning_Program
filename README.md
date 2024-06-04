@@ -951,6 +951,26 @@ Now, here to see the layout in magic, we don't need to write the whole address
 ### Lab introduction to Sky130 basic layers layout and LEF using inverter
 
 In sky130, every color is showing the different layer. here the first layer is for local interconnect shown by blue_purple color, then second layer is metal 1 which is shown by light purple color, and the metal 2 is shown by pink color. N-well is shown by solide das line. green is N-diffusion region. and red is for polysilicon gate. similarly the brown color is for P-diffusion.
+![04 06 2024_09 43 31_REC](https://github.com/VIJAYAKUMARAHS/Digital_VLSI_SoC_Design_and_Planning_Program/assets/89599199/dee56780-bbe5-4bc1-943b-b8cecd2fde64)
+
+In tckon window, lets see that the selected area is NMOS and similarly we can see PMOS also. and that is how we can check that the CMOS is working or not.
+
+![04 06 2024_09 54 37_REC](https://github.com/VIJAYAKUMARAHS/Digital_VLSI_SoC_Design_and_Planning_Program/assets/89599199/361c17bf-710e-4b6e-b077-d8dd3f2b8926)
+
+Lets look the Nwell
+
+![04 06 2024_09 56 06_REC](https://github.com/VIJAYAKUMARAHS/Digital_VLSI_SoC_Design_and_Planning_Program/assets/89599199/69fdc64e-2f35-4a6d-93a3-80013e66f4c9)
+
+by double pressing "S" to select the entire thing at output Y
+
+![04 06 2024_09 58 37_REC](https://github.com/VIJAYAKUMARAHS/Digital_VLSI_SoC_Design_and_Planning_Program/assets/89599199/9305c317-e4d9-43a5-87e5-a9c6e60e55f6)
+
+lets find the PMOS in the layout
+
+![04 06 2024_10 01 06_REC](https://github.com/VIJAYAKUMARAHS/Digital_VLSI_SoC_Design_and_Planning_Program/assets/89599199/7fe49771-dea6-4bec-9401-e939a876d4aa)
+
+we have to check the source of the PMOS is connected to the ground or not. and similarly we can check it for NMOS also.
+
 
 
 
