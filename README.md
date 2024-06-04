@@ -1129,8 +1129,30 @@ Place the mouse pointer at m3 contact and click on the p to paint it in the box 
 
 ### Lab exercise to fix poly.9 error in Sky130 tech-file
 
+Open poly.mag file or type load poly
+
+![04 06 2024_19 53 44_REC](https://github.com/VIJAYAKUMARAHS/Digital_VLSI_SoC_Design_and_Planning_Program/assets/89599199/8af6c1ad-db43-4e93-bda0-f19571af92d0)
+
+![04 06 2024_19 58 35_REC](https://github.com/VIJAYAKUMARAHS/Digital_VLSI_SoC_Design_and_Planning_Program/assets/89599199/5e470365-bf0c-4d5b-a05c-a1afea84961e)
+
+
+![04 06 2024_20 01 06_REC](https://github.com/VIJAYAKUMARAHS/Digital_VLSI_SoC_Design_and_Planning_Program/assets/89599199/3cee62d8-e6ab-4e2a-80f2-4c13f02ec245)
+
+
+![04 06 2024_20 05 40_REC](https://github.com/VIJAYAKUMARAHS/Digital_VLSI_SoC_Design_and_Planning_Program/assets/89599199/ad68f6dc-916f-4249-9ad5-a134b00b325e)
+change allpolynonres
+![04 06 2024_20 13 50_REC](https://github.com/VIJAYAKUMARAHS/Digital_VLSI_SoC_Design_and_Planning_Program/assets/89599199/a2839b2b-26de-41e7-b36b-dca5fa70705a)
+
+lets load the sky130A.tech file
+
+![04 06 2024_20 23 09_REC](https://github.com/VIJAYAKUMARAHS/Digital_VLSI_SoC_Design_and_Planning_Program/assets/89599199/fe910f1d-1a4b-4321-a8e0-f4808389d324)
+
+![04 06 2024_20 24 43_REC](https://github.com/VIJAYAKUMARAHS/Digital_VLSI_SoC_Design_and_Planning_Program/assets/89599199/9a6cd5d2-b300-4300-a97d-1ab2e4e5d6cf)
+
+
+![04 06 2024_20 19 24_REC](https://github.com/VIJAYAKUMARAHS/Digital_VLSI_SoC_Design_and_Planning_Program/assets/89599199/5b0bbb18-8f6c-48d1-96bd-5b280427f9b9)
 
 
 
 
-
+### Lab exercise to implement poly resistor spacing to diff and tap
