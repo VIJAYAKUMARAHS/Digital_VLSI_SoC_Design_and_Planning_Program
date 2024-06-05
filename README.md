@@ -1337,6 +1337,50 @@ In the huge layout we can able to see the cell using this command
 ![05 06 2024_11 44 01_REC](https://github.com/VIJAYAKUMARAHS/Digital_VLSI_SoC_Design_and_Planning_Program/assets/89599199/09445cf2-16fa-4c0a-abe3-3faf9c61e2b0)
 
 
+### Lab steps to configure OpenSTA for post-synthesis timing analysis
+
+for timing analysis we use openSTA 
+
+Run the below commands 
+
+./flow.tcl -interactive
+
+package require openlane 0.9
+
+prep -design picorv32a
+
+set lefs [glob $::env(DESIGN_DIR)/src/*.lef]
+
+add_lefs -src $lefs
+
+set ::env(SYNTH_SIZING) 1
+
+run_synthesis
+
+![05 06 2024_12 45 47_REC](https://github.com/VIJAYAKUMARAHS/Digital_VLSI_SoC_Design_and_Planning_Program/assets/89599199/07fe3e33-de44-4c16-9cc0-77400f3508cd)
+
+create new pre_sta.conf file, fill the details.We can do this by vim editor or in simple text editor also.
+using command touch pre_sta.conf
+![05 06 2024_14 09 01_REC](https://github.com/VIJAYAKUMARAHS/Digital_VLSI_SoC_Design_and_Planning_Program/assets/89599199/c05479f9-47b0-4658-9170-d0b58e1cdabb)
+
+now, lets create my_base.sdc file,
+touch my_base.sdc and fill the details
+
+![05 06 2024_14 38 41_REC](https://github.com/VIJAYAKUMARAHS/Digital_VLSI_SoC_Design_and_Planning_Program/assets/89599199/48f438cd-aab5-487e-9672-354d040319bd)
+changes done
+![05 06 2024_14 59 38_REC](https://github.com/VIJAYAKUMARAHS/Digital_VLSI_SoC_Design_and_Planning_Program/assets/89599199/266fcfbe-c01c-4f4f-8cde-1ccee4a4e1f1)
+
+
+
+
+### Lab steps to run CTS using Triton
+
+
+
+
+
+
+
 
 
 
