@@ -1270,8 +1270,45 @@ After running the synthesis
 ![05 06 2024_00 04 28_REC](https://github.com/VIJAYAKUMARAHS/Digital_VLSI_SoC_Design_and_Planning_Program/assets/89599199/16810af2-0909-4ec0-b942-b50fb8dc882f)
 
 
-Although tns and wns was slightly decreased that was not a good results so we need to do something with respect to the timing
-Hence we will try using the synthesis strategy switch and see whether delay is reduced or not
+tns and wns was slightly decreased, need to do something with respect to the timing
+lets using the synthesis strategy switch and see whether delay is reduced or not
+
+
+![05 06 2024_10 04 22_REC](https://github.com/VIJAYAKUMARAHS/Digital_VLSI_SoC_Design_and_Planning_Program/assets/89599199/d333529d-63b7-49c3-a52b-a617e821c6c1)
+
+![05 06 2024_10 11 34_REC](https://github.com/VIJAYAKUMARAHS/Digital_VLSI_SoC_Design_and_Planning_Program/assets/89599199/2858cef9-8e53-4460-bbd6-de6528abefd6)
+
+echo $::env(SYNTH_STRATEGY)
+
+set ::env(SYNTH_STRATEGY) "DELAY 3"
+
+echo $::env(SYNTH_BUFFERING)
+
+echo $::env(SYNTH_SIZING)
+
+set ::env(SYNTH_SIZING) 1
+
+echo $::env(SYNTH_DRIVING_CELL)
+
+![05 06 2024_10 22 52_REC](https://github.com/VIJAYAKUMARAHS/Digital_VLSI_SoC_Design_and_Planning_Program/assets/89599199/e1de8b25-76fd-42a3-b617-e704f6ea8e22)
+
+![05 06 2024_10 34 34_REC](https://github.com/VIJAYAKUMARAHS/Digital_VLSI_SoC_Design_and_Planning_Program/assets/89599199/824a4529-c0ff-4c2e-b9f2-80db38388b59)
+
+run_synthesis results
+
+![05 06 2024_10 44 15_REC](https://github.com/VIJAYAKUMARAHS/Digital_VLSI_SoC_Design_and_Planning_Program/assets/89599199/f79cb0fc-560b-49d2-9542-f84bdc30c3ff)
+
+the area of the is increased
+
+![05 06 2024_10 45 31_REC](https://github.com/VIJAYAKUMARAHS/Digital_VLSI_SoC_Design_and_Planning_Program/assets/89599199/d277d376-df8b-4f18-9350-6cc0c3cee4b5)
+
+![05 06 2024_10 52 39_REC](https://github.com/VIJAYAKUMARAHS/Digital_VLSI_SoC_Design_and_Planning_Program/assets/89599199/923367c8-a30a-4e52-b5f2-ba6a6a377486)
+
+area got increased and delay was reduced
+
+Check whether the inverter cell is embedded or not by seeing the merged.lef
+
+
 
 
 
