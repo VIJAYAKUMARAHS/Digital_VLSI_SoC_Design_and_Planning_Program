@@ -1375,6 +1375,38 @@ changes done
 
 ### Lab steps to run CTS using Triton
 
+lets start with cts(clock tree synthesis)
+To run cts use command **run_cts**
+
+![05 06 2024_16 07 20_REC](https://github.com/VIJAYAKUMARAHS/Digital_VLSI_SoC_Design_and_Planning_Program/assets/89599199/fd502536-13c1-4605-a16d-73dc0ec05558)
+
+Minimum path delay
+
+![05 06 2024_16 14 34_REC](https://github.com/VIJAYAKUMARAHS/Digital_VLSI_SoC_Design_and_Planning_Program/assets/89599199/e1009ea7-b2c9-45fc-9e6f-b43f3e64b38b)
+
+Maximum path delay
+
+![05 06 2024_16 16 27_REC](https://github.com/VIJAYAKUMARAHS/Digital_VLSI_SoC_Design_and_Planning_Program/assets/89599199/a0f0fd3a-fcf2-4af0-9424-567586c1539e)
+
+![05 06 2024_16 17 20_REC](https://github.com/VIJAYAKUMARAHS/Digital_VLSI_SoC_Design_and_Planning_Program/assets/89599199/8bbb91fc-da67-45b6-b31c-33525abb49fd)
+
+clock tree synthesis successful
+
+![05 06 2024_16 18 14_REC](https://github.com/VIJAYAKUMARAHS/Digital_VLSI_SoC_Design_and_Planning_Program/assets/89599199/4a1b3e0a-1e67-4b3b-aa21-e0d7eb6e01ce)
+
+check the directory cts .v file created or not
+
+![05 06 2024_16 23 13_REC](https://github.com/VIJAYAKUMARAHS/Digital_VLSI_SoC_Design_and_Planning_Program/assets/89599199/ad79ea19-b4e3-4cf4-b0c1-dbcca206c1c0)
+
+check the directory for def.cts
+![05 06 2024_16 24 53_REC](https://github.com/VIJAYAKUMARAHS/Digital_VLSI_SoC_Design_and_Planning_Program/assets/89599199/470230d0-b2e7-4076-91fd-4d2857e6f77e)
+
+### Lab steps to verify CTS runs
+
+
+
+
+
 
 
 
