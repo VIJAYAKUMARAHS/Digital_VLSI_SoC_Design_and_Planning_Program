@@ -1331,6 +1331,12 @@ placement done successfully and see the view on magic
 
 ![05 06 2024_11 25 18_REC](https://github.com/VIJAYAKUMARAHS/Digital_VLSI_SoC_Design_and_Planning_Program/assets/89599199/9f88ee76-57f3-4d3c-bd2a-07a77fd268fa)
 
+In the huge layout we can able to see the cell using this command
+
+
+![05 06 2024_11 44 01_REC](https://github.com/VIJAYAKUMARAHS/Digital_VLSI_SoC_Design_and_Planning_Program/assets/89599199/09445cf2-16fa-4c0a-abe3-3faf9c61e2b0)
+
+
 
 
 
