@@ -1306,7 +1306,32 @@ the area of the is increased
 
 area got increased and delay was reduced
 
-Check whether the inverter cell is embedded or not by seeing the merged.lef
+
+Run_floorplan
+
+![05 06 2024_11 12 07_REC](https://github.com/VIJAYAKUMARAHS/Digital_VLSI_SoC_Design_and_Planning_Program/assets/89599199/98e67c1f-0ce2-4736-9374-6e5aa916c295)
+
+run_placement
+
+![05 06 2024_11 13 48_REC](https://github.com/VIJAYAKUMARAHS/Digital_VLSI_SoC_Design_and_Planning_Program/assets/89599199/fbc31fb8-129e-4fdc-a14b-97125a44e802)
+
+positive slack
+
+![05 06 2024_11 16 29_REC](https://github.com/VIJAYAKUMARAHS/Digital_VLSI_SoC_Design_and_Planning_Program/assets/89599199/77fcec2a-8c7f-475a-8cb5-6acf86b5569c)
+
+placement done
+
+![05 06 2024_11 14 44_REC](https://github.com/VIJAYAKUMARAHS/Digital_VLSI_SoC_Design_and_Planning_Program/assets/89599199/8b96833e-cb53-4572-ab7a-53d1dad29ec6)
+
+To open magic to view the placement def
+
+![05 06 2024_11 23 54_REC](https://github.com/VIJAYAKUMARAHS/Digital_VLSI_SoC_Design_and_Planning_Program/assets/89599199/d94a0cfc-bb8c-4ad5-968c-53128ff924cf)
+
+placement done successfully and see the view on magic
+
+![05 06 2024_11 25 18_REC](https://github.com/VIJAYAKUMARAHS/Digital_VLSI_SoC_Design_and_Planning_Program/assets/89599199/9f88ee76-57f3-4d3c-bd2a-07a77fd268fa)
+
+
 
 
 
