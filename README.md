@@ -1435,6 +1435,51 @@ create db file first, db creation is one time process then you can read the db a
 for  that lets read .lef file from tmp
 read .def file
 
+![06 06 2024_12 50 35_REC](https://github.com/VIJAYAKUMARAHS/Digital_VLSI_SoC_Design_and_Planning_Program/assets/89599199/37793002-6880-4784-b9f9-f7525df84583)
+
+![06 06 2024_13 22 20_REC](https://github.com/VIJAYAKUMARAHS/Digital_VLSI_SoC_Design_and_Planning_Program/assets/89599199/bb701830-8004-4ebb-bdd2-dead5a82c21d)
+
+![06 06 2024_13 24 32_REC](https://github.com/VIJAYAKUMARAHS/Digital_VLSI_SoC_Design_and_Planning_Program/assets/89599199/d96f4a91-24a8-47e2-8e13-0bfbc342469b)
+
+![06 06 2024_13 25 18_REC](https://github.com/VIJAYAKUMARAHS/Digital_VLSI_SoC_Design_and_Planning_Program/assets/89599199/a121a1f7-593f-4e6a-95a1-97fe35269f94)
+
+To exit from the openroad enter exit
+
+### Lab steps to execute OpenSTA with right timing libraries and CTS assignment
+
+To remove sky130_fd_sc_hd__clkbuf_1 from the list
+
+set ::env(CTS_CLK_BUFFER_LIST) [lreplace $::env(CTS_CLK_BUFFER_LIST) 0 0]
+
+To check the current value of CTS_CLK_BUFFER_LIST
+
+echo $::env(CTS_CLK_BUFFER_LIST)
+
+![06 06 2024_15 40 17_REC](https://github.com/VIJAYAKUMARAHS/Digital_VLSI_SoC_Design_and_Planning_Program/assets/89599199/16c3cb66-318e-45c3-b26c-d666832e8198)
+
+now run the cts = run_cts
+
+![06 06 2024_15 49 16_REC](https://github.com/VIJAYAKUMARAHS/Digital_VLSI_SoC_Design_and_Planning_Program/assets/89599199/8f84a902-4144-4a1c-b820-41f051c95c3b)
+
+it through errors
+
+Now we have to change the cts def to placement def
+
+![06 06 2024_16 00 50_REC](https://github.com/VIJAYAKUMARAHS/Digital_VLSI_SoC_Design_and_Planning_Program/assets/89599199/6f15c583-bdab-4730-8464-62b6b84cfeba)
+
+now lets run the cts run_cts
+
+![06 06 2024_16 04 05_REC](https://github.com/VIJAYAKUMARAHS/Digital_VLSI_SoC_Design_and_Planning_Program/assets/89599199/fd3a3368-4200-4454-9124-8ec32fd1f81e)
+
+also chack the timing
+![06 06 2024_16 05 15_REC](https://github.com/VIJAYAKUMARAHS/Digital_VLSI_SoC_Design_and_Planning_Program/assets/89599199/b5a20495-7d73-4710-8298-dd18800d90cb)
+
+![06 06 2024_16 06 01_REC](https://github.com/VIJAYAKUMARAHS/Digital_VLSI_SoC_Design_and_Planning_Program/assets/89599199/64512674-a5dc-43d0-a968-439185a9f693)
+
+
+start openroad again
+
+
 
 
 
