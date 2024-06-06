@@ -1403,6 +1403,38 @@ check the directory for def.cts
 
 ### Lab steps to verify CTS runs
 
+To create a database in OPENROAD using LEF and TMP files, we can use the following commands:
+
+First, make sure we are in the directory where the LEF and TMP files are located.
+
+Then, enter the following command to start the OPENROAD tool,
+
+openroad
+
+Once you are in the OPENROAD tool, enter the following command to create the database,
+
+To Read lef file
+
+read_lef /openLANE_flow/designs/picorv32a/runs/02-04_05-27/tmp/merged.lef
+
+To Read def file
+
+read_def /openLANE_flow/designs/picorv32a/runs/02-04_05-27/results/cts/picorv32a.cts.def
+
+To Create an OpenROAD database file named pico_cts.db
+
+write_db pico_cts.db
+
+
+### Lab steps to analyze timing with real clocks using OpenSTA
+
+Initiating openroad 
+
+create db file first, db creation is one time process then you can read the db as many times you want
+
+for  that lets read .lef file from tmp
+read .def file
+
 
 
 
