@@ -1499,12 +1499,52 @@ Lets add the removed buffer
 ![07 06 2024_16 02 25_REC](https://github.com/VIJAYAKUMARAHS/Digital_VLSI_SoC_Design_and_Planning_Program/assets/89599199/66d23035-c953-4d52-8495-fac7bd91fca7)
 
 
+## Day 5 -Final step for RTL2GDS using tritinRoute and openSTA
+
+Now we are in the final step of this course, lets start learning about Routing and PDN.
+
+### Power Distribution Network and routing
+
+### Lab steps to build power distribution network
+
+Till now we done with CTS and STA, here we are begin routing. before go for routing we have to create PDN(power distribution network).
+
+If you you want to continue with the previous design stage you have to use below commands.
 
 
+docker
+
+./flow.tcl -interactive
+
+package require openlane 0.9
+
+prep -design picorv32a -tag (last day stage date)
+
+echo $::env(CURRENT_DEF) :- you can verify using this comamand
+
+Lets generate the PDN(power distribution network)file by using the command.
+
+![07 06 2024_17 04 15_REC](https://github.com/VIJAYAKUMARAHS/Digital_VLSI_SoC_Design_and_Planning_Program/assets/89599199/388e5af9-a108-48f2-9ce9-e7c35ba31179)
+
+![07 06 2024_17 42 59_REC](https://github.com/VIJAYAKUMARAHS/Digital_VLSI_SoC_Design_and_Planning_Program/assets/89599199/30f4f1a7-831b-4950-93a1-b356fb83c03a)
+
+![07 06 2024_17 49 39_REC](https://github.com/VIJAYAKUMARAHS/Digital_VLSI_SoC_Design_and_Planning_Program/assets/89599199/a7028a53-c0d8-4253-a3ec-47c25b0ce733)
+
+layers, pitch and others information 
+
+![07 06 2024_17 46 00_REC](https://github.com/VIJAYAKUMARAHS/Digital_VLSI_SoC_Design_and_Planning_Program/assets/89599199/97a637af-5878-4833-b0e6-9a19d3096c0e)
+
+checking the pdn file 
+![07 06 2024_17 57 23_REC](https://github.com/VIJAYAKUMARAHS/Digital_VLSI_SoC_Design_and_Planning_Program/assets/89599199/8365a59b-b7ce-4c06-9e7e-8bc382e65625)
+
+Look at the design after PDN in magic 
+
+![07 06 2024_18 03 55_REC](https://github.com/VIJAYAKUMARAHS/Digital_VLSI_SoC_Design_and_Planning_Program/assets/89599199/19ff2ddf-57c2-41e4-9477-c7515c075f39)
+
+![07 06 2024_18 05 52_REC](https://github.com/VIJAYAKUMARAHS/Digital_VLSI_SoC_Design_and_Planning_Program/assets/89599199/32c656ca-d16f-455b-ace0-35ea9609cadd)
 
 
-
-
+Lets start with routing part using command **run_routing**
 
 
 
