@@ -1547,6 +1547,48 @@ Look at the design after PDN in magic
 Lets start with routing part using command **run_routing**
 
 
+![07 06 2024_18 27 57_REC](https://github.com/VIJAYAKUMARAHS/Digital_VLSI_SoC_Design_and_Planning_Program/assets/89599199/0f698a6c-f8ce-4c73-8a55-172eabd22629)
+
+Number of violations in the design 0
+
+![07 06 2024_18 29 19_REC](https://github.com/VIJAYAKUMARAHS/Digital_VLSI_SoC_Design_and_Planning_Program/assets/89599199/97b8f4ce-6370-4988-9564-9d90f9920193)
+
+Hold slack
+
+![07 06 2024_18 30 58_REC](https://github.com/VIJAYAKUMARAHS/Digital_VLSI_SoC_Design_and_Planning_Program/assets/89599199/23f3ec93-00b5-456b-9162-a51d0ccec582)
+
+Setup slack
+
+![07 06 2024_18 32 04_REC](https://github.com/VIJAYAKUMARAHS/Digital_VLSI_SoC_Design_and_Planning_Program/assets/89599199/404cf44a-296c-47f0-ac52-407755f3b023)
+
+![07 06 2024_18 33 03_REC](https://github.com/VIJAYAKUMARAHS/Digital_VLSI_SoC_Design_and_Planning_Program/assets/89599199/8a8e64f9-abbb-4dc2-a779-d3cb5791d8ff)
+
+![07 06 2024_18 39 17_REC](https://github.com/VIJAYAKUMARAHS/Digital_VLSI_SoC_Design_and_Planning_Program/assets/89599199/ea3d3871-b7ed-466b-91f8-62e06e727be5)
+
+![07 06 2024_18 38 51_REC](https://github.com/VIJAYAKUMARAHS/Digital_VLSI_SoC_Design_and_Planning_Program/assets/89599199/f4141c9e-1f88-49d1-a333-1d530b1e99bb)
+
+![07 06 2024_18 45 49_REC](https://github.com/VIJAYAKUMARAHS/Digital_VLSI_SoC_Design_and_Planning_Program/assets/89599199/cadabc99-4523-42c3-8a8b-c054b3f9ce0a)
+
+After routing the image look like
+
+![07 06 2024_18 47 16_REC](https://github.com/VIJAYAKUMARAHS/Digital_VLSI_SoC_Design_and_Planning_Program/assets/89599199/8d7056bf-79a5-42ac-b6c0-e40475e1e4a0)
+
+
+## References
+
+Workshop Github material
+
+https://github.com/google/skywater-pdk
+
+https://github.com/nickson-jose/vsdstdcelldesign
+
+https://sourceforge.net/projects/ngspice/
+
+https://www.vlsisystemdesign.com/wp-content/uploads/2017/07/Introduction-to-Industrial-Physical-Design-Flow.pdf
+
+## Acknowledgement
+
+I would like to express my deep gratitude to Mr. Kunal Ghosh, Co-founder of VLSI System Design (VSD). and Mr. Nickson Jose for their guidance and presentation of the DIGITAL-VLSI-SOC-DESIGN-AND-PLANNING workshop. Their expertise and insights helping me to learn about physical chip design using OpenLANE flow tool and other techniques. The workshop was meticulously designed and executed. I have gained knowledge from it. I thank Mr. Kunal Ghosh and Mr. Nickson Jose for sharing their expertise and making this workshop successful.
 
 
 
