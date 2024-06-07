@@ -1478,6 +1478,26 @@ also chack the timing
 
 
 start openroad again
+Create .db file again
+
+![07 06 2024_15 38 36_REC](https://github.com/VIJAYAKUMARAHS/Digital_VLSI_SoC_Design_and_Planning_Program/assets/89599199/fc78bc26-b587-4467-a123-e0e35c633f80)
+
+![07 06 2024_15 44 53_REC](https://github.com/VIJAYAKUMARAHS/Digital_VLSI_SoC_Design_and_Planning_Program/assets/89599199/32bec8ce-6ff6-45e7-940e-170609b67d8c)
+
+![07 06 2024_15 47 05_REC](https://github.com/VIJAYAKUMARAHS/Digital_VLSI_SoC_Design_and_Planning_Program/assets/89599199/8e39f88c-20a6-42c7-a269-577365bba317)
+
+![07 06 2024_15 47 54_REC](https://github.com/VIJAYAKUMARAHS/Digital_VLSI_SoC_Design_and_Planning_Program/assets/89599199/11f81eeb-c51d-4e17-92c5-8d44d3431f1f)
+
+Checking the skew for HOLD and SETUP
+
+![07 06 2024_15 53 04_REC](https://github.com/VIJAYAKUMARAHS/Digital_VLSI_SoC_Design_and_Planning_Program/assets/89599199/71e6811a-bc4e-426a-87bf-2c696705101c)
+
+
+
+Lets add the removed buffer
+
+![07 06 2024_16 02 25_REC](https://github.com/VIJAYAKUMARAHS/Digital_VLSI_SoC_Design_and_Planning_Program/assets/89599199/66d23035-c953-4d52-8495-fac7bd91fca7)
+
 
 
 
